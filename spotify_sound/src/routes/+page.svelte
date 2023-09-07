@@ -1,0 +1,1 @@
+<h1 class="text-center text-teal-600">Hello</h1>
