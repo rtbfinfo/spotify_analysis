@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@200;400;600&display=swap');
+        font-family: 'Montserrat', sans-serif;
+    }
+}
 body {
-    background-color: #212121;
+    background-color: #121212;
 }
 
-:root {
-    --green : "#01C48F",
-    --purple : "#8C66F5"
-
-}

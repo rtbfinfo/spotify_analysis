@@ -1,44 +1,47 @@
-<h1 class="text-center text-teal-600">Hello</h1>
-<svg viewBox="0,0,900,300" width="900" height="300" style="max-width: 100%; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect width="900" height="300" fill=none/>
-    <g transform="translate(0, 150)">
-        <g fill="#01C48F">
-            <rect height="117.47098489656928" width="24" x="50" y="-58.73549244828464" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="147.47037319653396" width="24" x="84.78260869565219" y="-73.73518659826698" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="147.1907545466606" width="24" x="119.56521739130436" y="-73.5953772733303" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="161.54146797195486" width="24" x="154.3478260869565" y="-80.77073398597743" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="176.02523312941304" width="24" x="189.1304347826087" y="-88.01261656470652" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="159.94474651812985" width="24" x="223.91304347826085" y="-79.97237325906492" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="155.9590171167642" width="24" x="258.695652173913" y="-77.9795085583821" rx="16.666666666666668" ry="16.666666666666668"/>
-        </g>
-        <g fill="#8C66F5">
-            <rect height="225.67609913722202" width="24" x="293.47826086956525" y="-112.83804956861101" rx="16.666666666666668" ry="16.666666666666668"/>    
-            <rect height="226.189891478579" width="24" x="328.26086956521743" y="-113.0949457392895" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="204.93362212842948" width="24" x="363.0434782608696" y="-102.46681106421474" rx="16.666666666666668" ry="16.666666666666668"/>    
-        </g>
-        <g fill="#01C48F">
-            <rect height="163.21185364127527" width="24" x="397.8260869565217" y="-81.60592682063763" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="159.51534721483347" width="24" x="432.60869565217394" y="-79.75767360741673" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="188.17288110400824" width="24" x="467.39130434782606" y="-94.08644055200412" rx="16.666666666666668" ry="16.666666666666668"/>
-        </g>
-        <g fill="#8C66F5">
-            <rect height="221.72414848042092" width="24" x="502.17391304347825" y="-110.86207424021046" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="228.94033418022323" width="24" x="536.9565217391305" y="-114.47016709011162" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="227.00298682756312" width="24" x="571.7391304347826" y="-113.50149341378156" rx="16.666666666666668" ry="16.666666666666668"/>    
-        </g>
-        <g fill="#01C48F">
-            <rect height="192.8175888204109" width="24" x="606.5217391304349" y="-96.40879441020545" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="168.6584790866544" width="24" x="641.304347826087" y="-84.3292395433272" rx="16.666666666666668" ry="16.666666666666668"/>
-        </g>
-        <g fill="#8C66F5">
-            <rect height="243.44906967145982" width="24" x="676.0869565217391" y="-121.72453483572991" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="242.90927312091105" width="24" x="710.8695652173913" y="-121.45463656045553" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="250" width="24" x="745.6521739130434" y="-125" rx="16.666666666666668" ry="16.666666666666668"/>    
-        </g>
-        <g fill="#01C48F">
-            <rect height="200.45171967356572" width="24" x="780.4347826086956" y="-100.22585983678286" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="72.0156640115379" width="24" x="815.2173913043479" y="-36.00783200576895" rx="16.666666666666668" ry="16.666666666666668"/>
-            <rect height="50" width="24" x="850" y="-25" rx="16.666666666666668" ry="16.666666666666668"/>
-        </g></svg> 
+<script lang="ts">
+    import CardWave from "./components/CardWave.svelte";
+    import Scroll from "./components/Scrolly.svelte";
+    import { fly } from 'svelte/transition';
 
-        <img src="https://ds.static.rtbf.be/article/image/1920x1920/1/7/0/de58bfe3d33dada41a9398c30e21eeed-1654006349.jpg" alt="golden">
+    const steps = [0, 1, 2];
+    let currentStep: Number;
+</script>
+
+<section>
+    <!-- The chart in the background, which is sticky thanks to CSS below -->
+    <div class="sticky top-0">
+        <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen">
+            <CardWave step=0
+            currentStep={currentStep}
+            title="Base"/>
+            {#if currentStep ==1 || currentStep ==2}
+                <CardWave 
+                step=1
+                currentStep={currentStep}
+                title="Intro" 
+                />
+            {/if}
+            {#if currentStep ==2 }
+                <CardWave 
+                currentStep={currentStep}
+                step=2
+                title="Couplet"/>
+
+            {/if}
+        </div>
+    </div>
+  
+    <!-- The scrolling container which includes each of the text elements -->
+    <Scroll bind:value={currentStep}>
+      {#each steps as text, i}
+        <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
+          <div class="text-text flex justify-center z-10 flex-col bg-background p-2 rounded-lg bg-opacity-50">
+            {@html text}
+          </div>
+        </div>
+      {/each}
+    </Scroll>
+  </section>
+
+
+
