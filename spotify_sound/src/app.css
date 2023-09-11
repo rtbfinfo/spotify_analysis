@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #212121;
+}
+
+:root {
+    --green : "#01C48F",
+    --purple : "#8C66F5"
+
+}
