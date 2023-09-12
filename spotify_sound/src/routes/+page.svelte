@@ -1,47 +1,129 @@
 <script lang="ts">
-    import CardWave from "./components/CardWave.svelte";
-    import Scroll from "./components/Scrolly.svelte";
-    import { fly } from 'svelte/transition';
+    import Lenis from '@studio-freight/lenis';
+    import { onMount } from 'svelte';
 
-    const steps = [0, 1, 2];
-    let currentStep: Number;
+    import ScrollBloc from "./components/scrollBloc.svelte";
+    import Hero from "./components/Hero.svelte";
+    import Title from "./components/Title.svelte";
+    import CardGraph from "./components/cardGraph.svelte";
+
+    onMount(()=> {
+    //smooth scroll 
+    const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+    })
+
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    })
+
 </script>
 
-<section>
-    <!-- The chart in the background, which is sticky thanks to CSS below -->
-    <div class="sticky top-0">
-        <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen">
-            <CardWave step=0
-            currentStep={currentStep}
-            title="Base"/>
-            {#if currentStep ==1 || currentStep ==2}
-                <CardWave 
-                step=1
-                currentStep={currentStep}
-                title="Intro" 
-                />
-            {/if}
-            {#if currentStep ==2 }
-                <CardWave 
-                currentStep={currentStep}
-                step=2
-                title="Couplet"/>
-
-            {/if}
-        </div>
+<Hero/>
+<div class="h-screen bg-background rounded-2xl relative">
+    <div class="max-w-4xl text-text px-4 mx-auto text-lg">
+        <p class="pt-12">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Dans ce grand format data avec plein de jolis graphiques on vous explique pourquoi Spotify a modifié les techniques des artistes pour nous faire consommer de la zik.</p>
     </div>
-  
-    <!-- The scrolling container which includes each of the text elements -->
-    <Scroll bind:value={currentStep}>
-      {#each steps as text, i}
-        <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
-          <div class="text-text flex justify-center z-10 flex-col bg-background p-2 rounded-lg bg-opacity-50">
-            {@html text}
-          </div>
+    <ScrollBloc />
+    <section class="Pourquoi max-w-4xl mx-auto mb-20">
+        <Title
+            txt="Pourquoi c'est comme ça ?"
+            partie={1}
+            color="bg-primary"/>
+        <div class="max-w-4xl text-text px-4 mx-auto text-lg">
+            <p class="pb-2 pt-6">Lorem ipsum dolor sit amet consectetur.
+                Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+                Cras bibendum volutpat nisi sem hendrerit commodo et. 
+                Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+                vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+                Quisque varius odio dis at dignissim nam. Leo neque fermentum.</p>
         </div>
-      {/each}
-    </Scroll>
-  </section>
-
-
+        <CardGraph 
+            size="small"
+            title="les genres les plus populaires"
+            flourishId="14990472"
+            textContent="Lorem ipsum dolor sit amet consectetur.
+            Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+            Cras bibendum volutpat nisi sem hendrerit commodo et. 
+            Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+            vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+            Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
+        <CardGraph 
+            size="big"
+            flourishId="14936027"
+            title="L'évolution de la durée"
+            textContent="Lorem ipsum dolor sit amet consectetur.
+            Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+            Cras bibendum volutpat nisi sem hendrerit commodo et. 
+            Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+            vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+            Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
+        <CardGraph 
+            size="small"
+            flourishId="14990540" 
+            title="Durée vs popularité"
+            textContent="Lorem ipsum dolor sit amet consectetur.
+            Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+            Cras bibendum volutpat nisi sem hendrerit commodo et. 
+            Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+            vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+            Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
+    </section>
+    <section class="max-w-4xl mx-auto mb-20">
+        <Title
+            txt="le streaming change la musique"
+            partie={2}
+            color="bg-secondary"/>
+        <div class="max-w-4xl text-text px-4 mx-auto text-lg">
+            <p class="pb-2 pt-6">Lorem ipsum dolor sit amet consectetur.
+                Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+                Cras bibendum volutpat nisi sem hendrerit commodo et. 
+                Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+                vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+                Quisque varius odio dis at dignissim nam. Leo neque fermentum.</p>
+        </div>
+        <CardGraph 
+            size="small"
+            title="Evolution de la durée des intros du billboard hot 100"
+            flourishId="14990758"
+            textContent="Lorem ipsum dolor sit amet consectetur.
+            Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+            Cras bibendum volutpat nisi sem hendrerit commodo et. 
+            Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+            vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+            Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
+        <CardGraph 
+            size="small-inverse"
+            flourishId="14991036"
+            title="Evolution de la durée des intros du billboard hot 100"
+            textContent="Lorem ipsum dolor sit amet consectetur.
+            Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+            Cras bibendum volutpat nisi sem hendrerit commodo et. 
+            Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+            vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+            Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
+    </section>
+       
+    <section class="max-w-4xl mx-auto mb-20">
+        <Title
+            txt="Les réactions de l'industrie"
+            partie={3}
+            color="bg-graphicPurple"/>
+        <div class="max-w-4xl text-text px-4 mx-auto text-lg">
+            <p class="pb-12 pt-6">Lorem ipsum dolor sit amet consectetur.
+                Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
+                Cras bibendum volutpat nisi sem hendrerit commodo et. 
+                Massa donec libero sed eget eget. Consectetur natoque sit vitae magna 
+                vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
+                Quisque varius odio dis at dignissim nam. Leo neque fermentum.</p>
+        </div>
+    </section>
+   
+</div>
 

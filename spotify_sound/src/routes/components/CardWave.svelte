@@ -2,12 +2,14 @@
     export let step: Number;
     export let title: String;
     export let currentStep: Number;
-    import { fly } from 'svelte/transition';
+    import { slide } from 'svelte/transition';
+    import { flip } from 'svelte/animate';
 
 </script>
 
-<div class="bg-cardBg rounded-lg gap-2 p-4 flex flex-col justify-center items-center {currentStep == step ? "opacity-100" : "opacity-50 transition-all"}"
-    transition:fly|local={{ delay: 250, duration: 300, y: 500}}>
+<div class="bg-cardBg rounded-lg gap-2 p-4 flex flex-col justify-center items-center  hover:opacity-90 {currentStep == step ? "opacity-100" : "opacity-50 transition-all duration-500"}"
+    transition:slide
+   >
     <h1 class="font-semibold text-text text-xl">{title}</h1>
     <div class="flex gap-1 justify-items-end">
         <img src="./sound/intro.svg" alt="découpage de l'intro" style="opacity: {step == 0 ? 100 : 0}; transition-all">
