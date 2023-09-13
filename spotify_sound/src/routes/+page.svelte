@@ -6,6 +6,7 @@
     import Hero from "./components/Hero.svelte";
     import Title from "./components/Title.svelte";
     import CardGraph from "./components/cardGraph.svelte";
+  import ScrollExemple from './components/ScrollExemple.svelte';
 
     onMount(()=> {
     //smooth scroll 
@@ -31,6 +32,7 @@
         <p class="pt-12">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Dans ce grand format data avec plein de jolis graphiques on vous explique pourquoi Spotify a modifié les techniques des artistes pour nous faire consommer de la zik.</p>
     </div>
     <ScrollBloc />
+    <ScrollExemple />
     <section class="Pourquoi max-w-4xl mx-auto mb-20">
         <Title
             txt="Pourquoi c'est comme ça ?"
@@ -100,7 +102,7 @@
             Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
         <CardGraph 
             size="small-inverse"
-            flourishId="14991036"
+            flourishId="14991590"
             title="Evolution de la durée des intros du billboard hot 100"
             textContent="Lorem ipsum dolor sit amet consectetur.
             Libero nulla morbi cursus nibh mi aliquet augue elit risus. 

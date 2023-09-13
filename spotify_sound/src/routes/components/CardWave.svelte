@@ -5,6 +5,10 @@
     import { slide } from 'svelte/transition';
     import { flip } from 'svelte/animate';
 
+    let transition = "transition:slide"
+    if (currentStep == 0) {
+        transition = "in:slide"
+    }
 </script>
 
 <div class="bg-cardBg rounded-lg gap-2 p-4 flex flex-col justify-center items-center  hover:opacity-90 {currentStep == step ? "opacity-100" : "opacity-50 transition-all duration-500"}"
