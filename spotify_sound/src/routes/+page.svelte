@@ -6,7 +6,8 @@
     import Hero from "./components/Hero.svelte";
     import Title from "./components/Title.svelte";
     import CardGraph from "./components/cardGraph.svelte";
-  import ScrollExemple from './components/ScrollStructure.svelte';
+    import ScrollExemple from './components/ScrollStructure.svelte';
+    import SoundButton from './components/soundButton.svelte';
 
     onMount(()=> {
     //smooth scroll 
@@ -26,10 +27,13 @@
 
 </script>
 
-<Hero/>
-<div class="h-screen bg-background rounded-2xl relative">
-    <div class="max-w-4xl text-text px-4 mx-auto text-lg">
-        <p class="pt-12">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Dans ce grand format data avec plein de jolis graphiques on vous explique pourquoi Spotify a modifié les techniques des artistes pour nous faire consommer de la zik.</p>
+<Hero/>            
+<div class="h-screen bg-background rounded-2xl relative shadow-[ 0px_-20px_14px_-8px_rgba(5,247,130,0.78)]">
+    <div class="max-w-3xl text-text px-4 pt-12 mx-auto text-lg">
+        <p class="pt-6 first-letter:text-7xl first-letter:mr-3 first-letter:float-left">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Le 7 octobre 2008, Spotify était lancé en version publique. Le but de cette plate—frome imaginé par les Suédois Daniel Ek et Martin Lorentzon : de la musique à volonté moyennant des publicités ou un abonnement mensuel.</p>
+        <p class="pt-6">La force de Spotify, c’est son algorithme qui vous connait mieux que ne vous connaissait votre médiathécaire dans les années 90. Au point de vous proposer exactement ce que vous avez envie d’entendre au moment où votre humeur le demande. Avec un revers à la médaille : vous enfermer dans des genres musicaux qui vous plaisent.</p>
+        <p class="pt-6">Du côté des artistes aussi, les choses ont changé. Du côté de la rémunération d’abord - quelques poignées de centimes par écoute sur Spotify - mais aussi dans la manière de composer de la musique. Vous allez le voir dans ce grand format qui compile des milliers de données : tout est une question de secondes…</p>
+            <SoundButton />
     </div>
     <ScrollBloc />
     <ScrollExemple />

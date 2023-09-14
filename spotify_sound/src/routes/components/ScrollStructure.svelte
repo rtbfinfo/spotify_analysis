@@ -3,7 +3,6 @@
     import { afterUpdate } from "svelte";
     import CardWave from "./CardWave.svelte";
     import Scroll from "./Scrolly.svelte";
-    import CardSong from "./CardSong.svelte";
 
     const steps = ["<p>Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une intro, puis un couplet… et enfin arrive le refrain. Bref, l’artiste prend le temps… Dans le milieu on appelle ça la formule <span class='font-extrabold'><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p> "
                   , "Et voici une structure qui connait de plus en plus de succès depuis le début des années 2010. Vous avez remarqué ? La chanson est plus courte… mais ce n’est pas la seule chose qui a rétrécit."
@@ -21,7 +20,6 @@
 <section>
     <div class="sticky top-0">
         <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen shrink-0">
-            {#if currentStep == 0 || currentStep == 1 || currentStep == 2 || currentStep == 3}
               <CardWave
               step=0
               currentStep={currentStep}
@@ -41,7 +39,6 @@
                 title="Intro" 
                 />
                 {/if}
-            {/if}
 
         </div>
     </div>

@@ -6,6 +6,7 @@ export default {
     colors: {
      'background' : "#121212",
       'primary' : "#04C28F",
+      'primary-light' : "#4FC6A6",
       'secondary' : "#E9B327",
       'cardBg' : "#2E2E2E",
       'graphicPink' : "#FF365E",

@@ -1,9 +1,10 @@
 <script lang="ts">
     import { fly } from 'svelte/transition';
     import { afterUpdate } from "svelte";
-    import CardWave from "./CardWave.svelte";
     import Scroll from "./Scrolly.svelte";
-    import CardSong from "./CardSong.svelte";
+    import Song1 from './song1.svelte';
+    import Song2 from './song2.svelte';
+    import Song3 from './song3.svelte';
 
     const steps = ["Ecoutez cet extrait de Nothing’s Gonna Stop Us Now un titre du groupe américain Starship sorti en 1987"
                   , "Et maintenant, faisons un bon dans le temps et passons à cette chanson de Miley Cyrus sortie en 2023."
@@ -22,18 +23,17 @@
 <section>
     <div class="sticky top-0">
         <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen shrink-0 lg:flex-row">
-            {#if currentStep == 0 || currentStep == 1 || currentStep == 2 || currentStep == 3}
-              <CardSong step=0
+              <Song1 step=0
               currentStep={currentStep}
               title="Starship <span class='text-sm font-light'>Nothing's Gonna Stop Us Now</span>"
-              Duration="3:20"
+              Duration="4:30"
               bigSeconds={bigSeconds}
               date="1987"
               introLength="22<span class='text-5xl font-semibold'>s</span>"
               songSource="starship"
               />
               {#if currentStep == 1 || currentStep == 2 || currentStep == 3}
-                <CardSong step=1
+                <Song2 step=1
                 currentStep={currentStep}
                 title="Miley Cyrus <span class='text-sm font-light'>flower</span>"
                 Duration="3:20"
@@ -44,17 +44,16 @@
                 />
               {/if}
               {#if currentStep == 2 || currentStep == 3}
-                <CardSong step=2
+                <Song3 step=2
                 currentStep={currentStep}
                 title="Lost Frequencies <span class='text-sm font-light'>Where Are You Now</span>"
-                Duration="3:20"
+                Duration="2:28"
                 bigSeconds={bigSeconds}
                 date="2021"
                 introLength="0<span class='text-5xl font-semibold'>s</span>"
                 songSource="lost_frequencies"
                 />
               {/if}
-            {/if}
         </div>
     </div>
   

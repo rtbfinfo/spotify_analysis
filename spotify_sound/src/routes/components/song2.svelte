@@ -10,24 +10,38 @@
 
     import { slide, fade } from 'svelte/transition';
     import { flip } from 'svelte/animate';
-
+    import { sound } from '../store';
 
     let paused = true;
     let time = 0;
     let duration;
     $: progress = (time / duration);
 
-    $: if(currentStep == step) {
+    let sound_value: boolean
+
+    $: sound.subscribe((value) => {
+        sound_value = value;
+    });
+
+    $: if (sound_value){
+
+    if(currentStep == step) {
         paused = false;
+    } else {
+        paused = true;
+    }
     }
     
+    const playVideo = () => {
+        if (sound_value){
+        paused = !paused;
+        }
+    }
+    
+    //revenir au début de la chanson quand la progress bar est à la fin
     $: if ( progress == 1 && paused == true) {
     progress = 0;
    }
-    const playVideo = () => {
-        paused = !paused;
-    }
-    $: console.log(paused)
 </script>
 
 <div class="bg-cardBg rounded-lg gap-2 p-4 w-full md:w-96 flex flex-col justify-center items-center  hover:opacity-100 {currentStep == step ? "opacity-100" : bigSeconds ? "opacity-100" : "opacity-50 transition-all duration-500"}"
@@ -75,7 +89,7 @@
 	}
 
 	progress::-webkit-progress-bar {
-		background-color: rgb(226, 33, 33);
+		background-color: #FF365E;
 	}
 
 	progress::-webkit-progress-value {

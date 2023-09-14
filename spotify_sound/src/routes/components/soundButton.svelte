@@ -1,0 +1,85 @@
+<script>
+    import { sound } from "../store";
+
+    let checked = false;
+
+    $: if (checked) {
+        sound.set(true)
+    } else {
+        sound.set(false)
+    }
+
+</script>
+
+
+<div class="relative h-60">
+    <div class="wrap  top-20">
+        <div class="block">
+          <span>son</span>
+          <input data-index="0" id="cheap" type="checkbox" bind:checked={checked}/>
+          <label for="cheap"></label>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    input{
+  display:none;  
+}
+.block{
+  width:200px;
+  /* position:relative; */
+  clear:both;
+  margin:0 0 25px;
+  float: left;
+}
+span{
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:1px;
+  font-size:15px;
+  float:right;
+  width:85px;
+  margin:16px 0 0;
+}
+.wrap{
+  width:200px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  padding:30px 30px 5px;
+}
+label{
+  width:100px;
+  height:50px;
+  box-sizing:border-box;
+  border:3px solid;
+  float:left;
+  border-radius:100px;
+  position:relative;
+  cursor:pointer;
+  transition:.3s ease;
+}
+input[type=checkbox]:checked + label{
+  background:#04C28F;
+}
+input[type=checkbox]:checked + label:before{
+  left:50px;
+}
+label:before{
+  transition:.3s ease;
+  content:'';
+  width:40px;
+  height:40px;
+  position:absolute;
+  background:white;
+  left:2px;
+  top:2px;
+  box-sizing:border-box;
+  color:black;
+  border-radius:100px;
+}
+</style>
