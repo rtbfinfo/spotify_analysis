@@ -21,7 +21,7 @@
 
 <section>
     <div class="sticky top-0">
-        <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen shrink-0">
+        <div class="mx-3 flex gap-10 flex-col justify-center items-center h-screen shrink-0 lg:flex-row">
             {#if currentStep == 0 || currentStep == 1 || currentStep == 2 || currentStep == 3}
               <CardSong step=0
               currentStep={currentStep}
@@ -61,7 +61,7 @@
     <Scroll bind:value={currentStep}>
       {#each steps as text, i}
         <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
-          <div class="text-text flex justify-center z-10 flex-col bg-background rounded-lg bg-opacity-80 w-screen p-4">
+          <div class="text-text flex justify-center z-10 flex-col bg-background rounded-lg bg-opacity-80 w-screen md:w-1/2 p-4">
             {@html text}
           </div>
         </div>

@@ -30,7 +30,7 @@
     $: console.log(paused)
 </script>
 
-<div class="bg-cardBg rounded-lg gap-2 p-4 flex flex-col justify-center items-center  hover:opacity-100 {currentStep == step ? "opacity-100" : bigSeconds ? "opacity-100" : "opacity-50 transition-all duration-500"}"
+<div class="bg-cardBg rounded-lg gap-2 p-4 w-full md:w-96 flex flex-col justify-center items-center  hover:opacity-100 {currentStep == step ? "opacity-100" : bigSeconds ? "opacity-100" : "opacity-50 transition-all duration-500"}"
     transition:slide
    >
     <h1 class="font-semibold text-text text-xl">{@html title}</h1>

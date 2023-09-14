@@ -5,9 +5,9 @@
     import Scroll from "./Scrolly.svelte";
     import CardSong from "./CardSong.svelte";
 
-    const steps = ["Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une intro, puis un couplet… et enfin arrive le refrain. Bref, l’artiste prend le temps… Dans le milieu on appelle ça la formule ABABCB "
+    const steps = ["<p>Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une intro, puis un couplet… et enfin arrive le refrain. Bref, l’artiste prend le temps… Dans le milieu on appelle ça la formule <span class='font-extrabold'><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p> "
                   , "Et voici une structure qui connait de plus en plus de succès depuis le début des années 2010. Vous avez remarqué ? La chanson est plus courte… mais ce n’est pas la seule chose qui a rétrécit."
-                  , " Désormais on entre plus vite dans le vif du sujet avec quelque chose de punchy (dans le milieu on appelle ces quelques notes qui attirent votre oreille un “hook”) et le refrain arrive plus tôt pour bien nous rester en tête. On peut aussi résumer - mais pas toujours - par BABABCB"]
+                  , " <p>Désormais on entre plus vite dans le vif du sujet avec quelque chose de punchy (dans le milieu on appelle ces quelques notes qui attirent votre oreille un “hook”) et le refrain arrive plus tôt pour bien nous rester en tête. On peut aussi résumer - mais pas toujours - par <span class='font-extrabold'><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p>"]
     let currentStep = 0;
     let bigSeconds = false;
 
@@ -36,9 +36,10 @@
                 {/if}
                 {#if currentStep == 2 || currentStep == 3}
                 <CardWave 
-                currentStep={currentStep}
                 step=2
-                title="Couplet"/>
+                currentStep={currentStep}
+                title="Intro" 
+                />
                 {/if}
             {/if}
 
@@ -48,7 +49,7 @@
     <Scroll bind:value={currentStep}>
       {#each steps as text, i}
         <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
-          <div class="text-text flex justify-center z-10 flex-col bg-background rounded-lg bg-opacity-80 w-screen p-4">
+          <div class="text-text flex justify-center z-10 bg-background rounded-lg bg-opacity-80 w-screen p-4 md:w-1/2">
             {@html text}
           </div>
         </div>

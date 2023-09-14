@@ -6,7 +6,7 @@
     import Hero from "./components/Hero.svelte";
     import Title from "./components/Title.svelte";
     import CardGraph from "./components/cardGraph.svelte";
-  import ScrollExemple from './components/ScrollExemple.svelte';
+  import ScrollExemple from './components/ScrollStructure.svelte';
 
     onMount(()=> {
     //smooth scroll 
@@ -101,8 +101,8 @@
             vitae netus aliquet eget. Commodo diam tincidunt placerat dictumst lobortis. 
             Quisque varius odio dis at dignissim nam. Leo neque fermentum."/>
         <CardGraph 
-            size="small-inverse"
-            flourishId="14991590"
+            size="big"
+            flourishId="datawrapper"
             title="Evolution de la durée des intros du billboard hot 100"
             textContent="Lorem ipsum dolor sit amet consectetur.
             Libero nulla morbi cursus nibh mi aliquet augue elit risus. 
