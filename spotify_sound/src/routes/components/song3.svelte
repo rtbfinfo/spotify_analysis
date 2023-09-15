@@ -68,7 +68,7 @@
     </div>
   {:else}
     <div transition:slide class="flex gap-4 justify-items-end items-center">
-      <button
+      <!-- <button
         class="rounded-full bg-text w-10 h-10 hover:opacity-60"
         on:click={playVideo}
       >
@@ -99,7 +99,7 @@
             />
           </svg>
         {/if}
-      </button>
+      </button> -->
       <audio
         src="https://rtbfmedia.be/rtbfinfo/songs_intro/{songSource}.mp3"
         playsinline
@@ -108,7 +108,7 @@
         bind:duration
       />
       <!-- <div class="progress-container {step == 0 ? "before:bg-primary" : step == 1 ? "before:bg-graphicPink" : "before:bg-secondary"} {"before:w-[" + progress + "%]"}" > -->
-      <progress
+      <!-- <progress
         id="progress"
         value={progress || 0}
         min="0"
@@ -117,7 +117,9 @@
           : step == 1
           ? 'bg-graphicPink'
           : 'bg-secondary'} "
-      />
+      /> -->
+      <iframe src="https://www.youtube.com/embed/G7KNmW9a75Y?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end=10&amp;width=560&amp;width=560" width="150" height="100" allowtransparency="true" frameborder="0"></iframe>
+
       <!-- </div>  -->
       <p class="text-text text-sm font-semibold">{Duration}</p>
     </div>
@@ -125,6 +127,11 @@
 </div>
 
 <style>
+      iframe {
+        border-radius: 10px;
+        /* clip-path: path("M6.8889 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M35.7456 15h7.5393s6 0 6 6v56s0 6 -6 6h-7.5393s-6 0 -6 -6v-56s0 -6 6 -6 M67.8588 0h7.5393s6 0 6 6v86s0 6 -6 6h-7.5393s-6 0 -6 -6v-86s0 -6 6 -6 M99.9719 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M128.828 22h4.2827s6 0 6 6v42s0 6 -6 6h-4.2827s-6 0 -6 -6v-42s0 -6 6 -6"); */
+
+}
   progress {
     clip-path: path(
       "M6.8889 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M35.7456 15h7.5393s6 0 6 6v56s0 6 -6 6h-7.5393s-6 0 -6 -6v-56s0 -6 6 -6 M67.8588 0h7.5393s6 0 6 6v86s0 6 -6 6h-7.5393s-6 0 -6 -6v-86s0 -6 6 -6 M99.9719 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M128.828 22h4.2827s6 0 6 6v42s0 6 -6 6h-4.2827s-6 0 -6 -6v-42s0 -6 6 -6"

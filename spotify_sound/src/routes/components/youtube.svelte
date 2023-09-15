@@ -7,15 +7,16 @@
     export let date: String;
     export let introLength: String;
     export let songSource: String;
+    export let end: Number;
 
     import { slide, fade } from 'svelte/transition';
     import { flip } from 'svelte/animate';
     import { sound } from '../store';
 
+    let lost = "PoP2Sa7wYNQ"
+    let cyrus = "G7KNmW9a75Y"
     let paused = true;
     let time = 0;
-    let duration;
-    $: progress = (time / duration);
 
     
     let sound_value: boolean
@@ -39,12 +40,6 @@
         }
     }
     
-    //revenir au début de la chanson quand la progress bar est à la fin
-    $: if ( progress == 1 && paused == true) {
-    progress = 0;
-   }
-  
-    $: console.log(paused)
 </script>
 
 <div class="bg-cardBg rounded-lg gap-2 p-4 w-full md:w-96 flex flex-col justify-center items-center  hover:opacity-100 {currentStep == step ? "opacity-100" : bigSeconds ? "opacity-100" : "opacity-50"} transition-all duration-500"
@@ -58,24 +53,8 @@
     </div>
     {:else}
     <div transition:slide class="flex gap-4 justify-items-end items-center">
-        <!-- <button class="rounded-full bg-text w-10 h-10 hover:opacity-60" on:click={playVideo}>
-            {#if !paused}
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-10 text-background" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" clip-rule="evenodd" />
-            </svg>
-            {:else}
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-10 text-background" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M8 5v10l7-5-7-5z" clip-rule="evenodd" />
-            </svg>
-            {/if}
-        </button> -->
-        <audio src="https://rtbfmedia.be/rtbfinfo/songs_intro/{songSource}.mp3" 
-        playsinline
-        bind:paused={paused} 
-        bind:currentTime={time}
-		bind:duration />   
-            <!-- <progress id="progress" value={progress || 0} min="0" class="{step == 0 ? "bg-primary" : step == 1 ? "bg-graphicPink" : "bg-secondary"} "></progress>     -->
-            <iframe src="https://www.youtube.com/embed/G7KNmW9a75Y?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end=10&amp;width=560&amp;width=560&amp;controls=0&amp;modestbranding=1&amp;" width="250" height="200" allowtransparency="true" modestbranding="1" controls="0" frameborder="0"></iframe>
+
+            <iframe src="https://www.youtube.com/embed/{songSource}?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end={end}&amp;width=560&amp;width=560&amp;controls=0&amp;modestbranding=1&amp;" width="250" height="142" allowtransparency="true" modestbranding="1" controls="0" frameborder="0"></iframe>
             <p class="text-text text-sm font-semibold">{Duration}</p>
     </div>
     {/if}

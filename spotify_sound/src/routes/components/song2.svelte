@@ -55,7 +55,7 @@
     </div>
     {:else}
     <div transition:slide class="flex gap-4 justify-items-end items-center">
-        <button class="rounded-full bg-text w-10 h-10 hover:opacity-60" on:click={playVideo}>
+        <!-- <button class="rounded-full bg-text w-10 h-10 hover:opacity-60" on:click={playVideo}>
             {#if !paused}
             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-10 text-background" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" clip-rule="evenodd" />
@@ -65,21 +65,27 @@
                 <path fill-rule="evenodd" d="M8 5v10l7-5-7-5z" clip-rule="evenodd" />
             </svg>
             {/if}
-        </button>
+        </button> -->
         <audio src="https://rtbfmedia.be/rtbfinfo/songs_intro/{songSource}.mp3" 
         playsinline
         bind:paused={paused} 
         bind:currentTime={time}
 		bind:duration />   
         <!-- <div class="progress-container {step == 0 ? "before:bg-primary" : step == 1 ? "before:bg-graphicPink" : "before:bg-secondary"} {"before:w-[" + progress + "%]"}" > -->
-            <progress id="progress" value={progress || 0} min="0" class="{step == 0 ? "bg-primary" : step == 1 ? "bg-graphicPink" : "bg-secondary"} "></progress>    
-        <!-- </div>  -->
+            <!-- <progress id="progress" value={progress || 0} min="0" class="{step == 0 ? "bg-primary" : step == 1 ? "bg-graphicPink" : "bg-secondary"} "></progress>     -->
+            <iframe src="https://www.youtube.com/embed/G7KNmW9a75Y?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end=10&amp;width=560&amp;width=560" width="150" height="100" allowtransparency="true" frameborder="0"></iframe>
+            <!-- </div>  -->
         <p class="text-text text-sm font-semibold">{Duration}</p>
     </div>
     {/if}
 </div>
 
 <style>
+        iframe {
+        border-radius: 10px;
+        /* clip-path: path("M6.8889 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M35.7456 15h7.5393s6 0 6 6v56s0 6 -6 6h-7.5393s-6 0 -6 -6v-56s0 -6 6 -6 M67.8588 0h7.5393s6 0 6 6v86s0 6 -6 6h-7.5393s-6 0 -6 -6v-86s0 -6 6 -6 M99.9719 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M128.828 22h4.2827s6 0 6 6v42s0 6 -6 6h-4.2827s-6 0 -6 -6v-42s0 -6 6 -6"); */
+
+}
     	progress {
             clip-path: path("M6.8889 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M35.7456 15h7.5393s6 0 6 6v56s0 6 -6 6h-7.5393s-6 0 -6 -6v-56s0 -6 6 -6 M67.8588 0h7.5393s6 0 6 6v86s0 6 -6 6h-7.5393s-6 0 -6 -6v-86s0 -6 6 -6 M99.9719 11h4.2827s6 0 6 6v64s0 6 -6 6h-4.2827s-6 0 -6 -6v-64s0 -6 6 -6 M128.828 22h4.2827s6 0 6 6v42s0 6 -6 6h-4.2827s-6 0 -6 -6v-42s0 -6 6 -6");
             height: 100px;
