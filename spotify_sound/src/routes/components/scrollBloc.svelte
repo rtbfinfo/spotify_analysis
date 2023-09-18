@@ -9,7 +9,7 @@
 
     const steps = ["Ecoutez cet extrait de «&nbsp;Nothing’s Gonna Stop Us Now&nbsp;», un titre du groupe américain Starship sorti en 1987. Une fois que l'intro s'arrête, scrollez vers le bas pour passer à la musique suivante."
                   , "Et maintenant, faisons un bond dans le temps et passons à cette chanson de Miley Cyrus sortie en 2023. Il n’y a pas quelque chose qui vous frappe ? Scrollez encore vers l'étape suivante..."
-                  , "Allez, faisons encore plus évident avec «&nbsp;Where Are You Nowt&nbsp;», le tube du DJ belge Lost Frequencies souligné par la voix du Britannique Calum Scott. Fin août dernier, ce titre dépassait le milliard d’écoutes sur Spotify… Non ? Toujours pas ?"
+                  , "Allez, faisons encore plus évident avec «&nbsp;Where Are You Now&nbsp;», le tube du DJ belge Lost Frequencies souligné par la voix du Britannique Calum Scott. Fin août dernier, ce titre dépassait le milliard d’écoutes sur Spotify… Non ? Toujours pas ?"
                   , "Vous l’avez compris maintenant: l’introduction est à chaque fois plus courte. Ces trois titres choisis pas tout à fait au hasard représentent en fait bien une évolution dans la façon de composer des tubes." ]
                   let currentStep = 0;
     let bigSeconds = false;

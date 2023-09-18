@@ -163,12 +163,12 @@
         <div class="md:flex max-w-full mx-auto">
             <CardGraph 
                 size="big"
-                title="Durée moyenne des chansons du Billboard hot 100"
+                title="Durée moyenne des chansons du Billboard Hot 100"
                 flourishId="14990731"
                 textContent=""/>
             <CardGraph 
                 size="big"
-                title="Durée moyenne des intros du Billboard hot 100"
+                title="Durée moyenne des intros du Billboard Hot 100"
                 flourishId="14990758"
                 textContent=""/>
         </div>
