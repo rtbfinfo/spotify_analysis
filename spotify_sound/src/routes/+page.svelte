@@ -147,7 +147,7 @@
                  Dans les années 70-80, les très très longs morceaux bénéficiaient de ce que l'on appelait un ‘radio edit’, c'est-à-dire un remontage où on compressait la chanson 
                  en trois minutes ou trois minutes 30, qui est à peu près le format classique qui a perduré pendant des dizaines d'années. C'était juste des petits aménagements,
                  mais ça ne défigurait pas la chanson et en tout cas, ça n'influençait pas la création originale de la chanson qui avait son développement tel que l'avait voulu l'artiste.&nbsp;</i>»</p>
-                 <img src="https://www.woopets.fr/assets/img/001/244/1200x675/choisir-chien-japonais.jpg" alt="Max Martin, roi des tubes">
+                 <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/max_martin.jpg" alt="Max Martin, roi des tubes">
                  <p class="text-sm font-light border-l-4 p-1 mt-1 border-graphicPurple rounded-sm ">Max Martin, roi des tubes à l'origine du "...Baby One More Time" de Britney Spears et compositeur pour Taylor Swift. Ici aux Spotify's Secret Genius Awards le 1er novembre 2017 - Matt Winkelmeyer/Getty Images for Spotify</p>
                 </div>
     </section>
@@ -209,7 +209,7 @@
                 «&nbsp;<i>Si j’écris une chanson pour un autre grand artiste pop, je veux jouer le grand jeu. Un refrain dans les 30 premières secondes. Pas d'intro étrange et complaisante... 
                 Un hook au début de l'intro, peut-être même en commençant par le refrain, le tout en moins de trois minutes&nbsp;</i>». L’artiste a bien compris l’enjeu&nbsp;: 
                 «&nbsp;<i>Ce qui compte, c'est de savoir si on a réussi à les capter dans les cinq premières secondes. Et l'ont-ils ajouté à leur liste playlist&nbsp;?&nbsp;</i>»</p>
-                <img src="https://www.woopets.fr/assets/img/001/244/1200x675/choisir-chien-japonais.jpg" alt="charlie XCX">
+                <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/charli_xcx.jpg" alt="charlie XCX">
                 <p class="text-sm font-light border-l-4 p-1 mt-1 border-primary rounded-sm">L'artiste Charli XCX à Londres, le 17 septembre 2023 - Dave Benett/Getty Images for MAC Cosmetics</p>
                 <p class="pb-4 pt-6">Ne nous faites pas dire ce que nous n’avons pas dit. Non, tous les genres musicaux n’ont pas changé à cause de Spotify. Et tous les artistes présents sur la plate-forme ne se soumettent pas sans discuter au diktat du chronomètre pour plaire au petit rond vert. Certains s’insurgent même. Tel le groupe britannique The Pocket Gods qui a sorti l’an dernier un album de 1000 chansons de 30 secondes intitulé «&nbsp;<i>Nobody makes money anymore&nbsp;</i>» («&nbsp;<i>plus personne ne gagne d’argent aujourd’hui&nbsp;</i>»). </p>
             <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de la plateforme. «&nbsp;<i>Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll&nbsp;</i>» chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
