@@ -38,7 +38,7 @@
               {#if currentStep == 1 || currentStep == 2 || currentStep == 3}
                 <Youtube step=1
                 currentStep={currentStep}
-                title="Miley Cyrus <span class='text-sm font-light'>flower</span>"
+                title="Miley Cyrus <span class='text-sm font-light'>Flowers</span>"
                 Duration="3:20"
                 bigSeconds={bigSeconds}
                 date="2023"
