@@ -5,17 +5,17 @@
 
 <div class="text-text text-center h-screen flex flex-col justify-center items-center gap-8 bg-cardBg z-0 sticky top-0">
     <h4 class="text-sm">Décrypte</h4>
-    <h1 class="text-6xl font-extrabold tracking-tighter max-w-4xl" style="text-wrap: balance;">Comment <span class="text-primary">Spotify</span> a changé la façon de faire de la <span class="text-secondary">musique</span></h1>
+    <h1 class="text-6xl font-extrabold tracking-tighter max-w-4xl" style="text-wrap: balance;">Comment <span class="text-primary">Spotify</span> a changé la façon de composer la <span class="text-secondary">musique</span></h1>
     <div class="sound-wave flex gap-2 justify-center w-screen">
-        {#each Array(100) as _, index (index)}
+        {#each Array(110) as _, index (index)}
             <div class=" bar w-2 h-full bg-primary rounded-md" style="animation-duration:{Math.random() * (1.5 - 0.5) + 0.5}s"></div>
         {/each}
     </div>
-    <h2 class="text-2xl tracking-tight">Sous-titre</h2>
+    <h2 class="text-2xl tracking-tight">Sous-titre ???????????????????????</h2>
     <div class="text-center">
         <h3 class="text-lg bg-cardBg p-2 rounded-lg tracking-tight text-primary max-w-fit bg-opacity-50 hover:bg-opacity-100 transition-all">Par Ambroise Carton, Sarah Heinderyckx et Héloïse Feldmann</h3>
     </div>
-    <div class="mouse_wheel flex items-center flex-col z-10 absolute top-3/4">
+    <div class="mouse_wheel flex items-center flex-col z-10 absolute sm:bottom-10 top-3/4">
         <div class="anim-scroll border-2 border-text h-10 relative w-5 z-10 rounded-lg"></div>
         <div class="anim-scroll--wheel"></div>
     </div>

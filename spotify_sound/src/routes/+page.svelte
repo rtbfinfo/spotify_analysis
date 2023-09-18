@@ -35,7 +35,9 @@
         <p class="pt-6 first-letter:text-7xl first-letter:mr-3 first-letter:float-left">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Le 7 octobre 2008, Spotify était lancé en version publique. Le but de cette plate-forme imaginée par les Suédois Daniel Ek et Martin Lorentzon : offrir de la musique à volonté moyennant des publicités ou un abonnement mensuel.</p>
         <p class="pt-6">La force de Spotify, c’est son algorithme qui vous connaît mieux que ne vous connaissait votre médiathécaire dans les années 90. Au point de vous proposer exactement ce que vous avez envie d’entendre au moment où votre humeur l’exige. Avec un revers à la médaille : le petit rond vert vous encercle dans des genres musicaux taillés pour vous plaire.</p>
         <p class="pt-6">Pour les artistes aussi, les choses ont changé. Du côté de la rémunération d’abord - quelques poignées de centimes par écoute sur Spotify - mais aussi dans la manière de composer de la musique. Vous allez le voir dans ce grand format qui compile des milliers de données : tout est une question de secondes cruciales…</p>
-            <SoundButton />
+        <p class="pt-6 font-bold text-center text-secondary">texte lié au bouton</p>
+
+        <SoundButton />
     </div>
     <ScrollBloc />
     <ScrollExemple />
@@ -75,7 +77,7 @@
                   c'est compliqué”, confirme Olivier Duerinckx, coordinateur Musical des Radios de la RTBF.</p>
         </div>
     </section>
-    <section class="Pourquoi max-w-3xl mx-auto mb-20">
+    <section class="Pourquoi mx-auto mb-20">
         <Title
             txt='La preuve par les datas'
             partie={2}
@@ -90,6 +92,8 @@
                  Cette popularité est calculée par un algorithme et est basée, en grande partie, sur le nombre total d’écoute d’un morceau et à quel point ces écoutes sont récentes.”</p>
             <p class="pb-2 pt-6 font-bold text-xl">Nous avons donc compilé les 100 titres les plus populaires année par année entre 2008 et 2023. Voici le résultat en graphiques.</p>
         </div>
+        <div class="max-w-screen-lg mx-auto">
+
         <CardGraph 
             size="small"
             title="les genres les plus populaires"
@@ -108,13 +112,14 @@
                ce qui nous a parfois obligés à rallonger nos conducteurs d'un titre parce que sinon on arrivait trop court en fin d’heure”.`}/>
         <CardGraph 
             size="small"
-            flourishId="14990540" 
-            title="Durée vs popularité"
+            flourishId="15019115" 
+            title="Durée vs popularité(plus court ?)"
             textContent={` Si on met en perspective la durée d’un morceau et sa popularité, une cible rouge se forme 
             : les titres “qui marchent” se situent majoritairement autour des 3 minutes. Bien sûr, il reste des 
             artistes qui obtiennent une bonne cote de popularité avec des morceaux longs. C’est ce qu’on pourrait appeler 
             “l’exception Taylor Swift”. En effet, quoi que la chanteuse américaine fasse, ça cartonne. Tel son “All Too Well 
             (10 minutes version)” en haut à droite du graphique. Quand on est une artiste internationale de cette envergure, on peut tout se permettre. `}/>
+        </div>
     </section>
     <section class="max-w-3xl mx-auto mb-20">
         <Title
@@ -142,7 +147,7 @@
         </div>
     </section>
 
-    <section class="max-w-3xl mx-auto mb-20">
+    <section class="max-w-6xl mx-auto mb-20">
         <Title
             txt="Ce que le Billboard Hot 100 nous révèle aussi du mainstream(ing)"
             partie={4}
@@ -158,7 +163,7 @@
                 chanteur n’entre en scène. Dans les années 90, une intro pouvait allègrement dépasser les 20 secondes. Aujourd’hui, c’est beaucoup moins. Parfois 15 secondes, 
                 parfois 5… parfois rien du tout.</p>
         </div>
-        <div class="md:flex">
+        <div class="md:flex max-w-full mx-auto">
             <CardGraph 
                 size="big"
                 title="Evolution de la durée des chansons du billboard hot 100"
@@ -177,7 +182,7 @@
         </div>
         <CardGraph 
             size="big"
-            flourishId="datawrapper"
+            flourishId="14991590"
             title="Evolution de la durée des intros du billboard hot 100"
             textContent=""/>
 
@@ -202,7 +207,7 @@
             <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de la plateforme. “Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll” chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
             <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). “On n’est pas devenu riches avec ça”, s’amuse-t-il.</p>
             <p class="pb-4 pt-6">L’artiste que nous avons contacté en profite pour glisser ceci : “On est à blâmer aussi en tant que consommateur parce qu’on veut tout gratuitement. Ce n’est pas juste la grande méchante industrie.”
-            <p class="pb-4 pt-6">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. “Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite”, assure le musicien bruxellois Doowy. ”S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide”, conclut l’interprète du tout récent “Premières fois”… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes 41.</p>
+            <p class="pb-4 pt-6 mb-12">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. “Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite”, assure le musicien bruxellois Doowy. ”S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide”, conclut l’interprète du tout récent “Premières fois”… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes 41.</p>
         </div>
     </section>
    

@@ -7,9 +7,9 @@
     import Song3 from './song3.svelte';
     import Youtube from './youtube.svelte';
 
-    const steps = ["Ecoutez cet extrait de Nothing’s Gonna Stop Us Now un titre du groupe américain Starship sorti en 1987"
-                  , "Et maintenant, faisons un bon dans le temps et passons à cette chanson de Miley Cyrus sortie en 2023."
-                  , "Il n’y a pas quelque chose qui vous frappe ? Allez, faisons encore plus évident avec Where Are You Now, le tube du DJ belge Lost Frequencies souligné par la voix du Britannique Calum Scott. Fin août, ce titre dépassait le milliard d’écoutes sur Spotify…"
+    const steps = [" Ecoutez cet extrait de Nothing’s Gonna Stop Us Now, un titre du groupe américain Starship sorti en 1987 - "
+                  , "Et maintenant, faisons un bond dans le temps et passons à cette chanson de Miley Cyrus sortie en 2023."
+                  , " Il n’y a pas quelque chose qui vous frappe ? Allez, faisons encore plus évident avec Where Are You Now, le tube du DJ belge Lost Frequencies souligné par la voix du Britannique Calum Scott. Fin août dernier, ce titre dépassait le milliard d’écoutes sur Spotify…"
                   , "Vous l’avez compris maintenant: l’introduction est à chaque fois plus courte. Ces trois titres choisis pas tout à fait au hasard représentent en fait bien une évolution dans la façon de composer des tubes." ]
                   let currentStep = 0;
     let bigSeconds = false;

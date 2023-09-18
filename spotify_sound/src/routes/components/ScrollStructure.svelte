@@ -5,12 +5,12 @@
     import Scroll from "./Scrolly.svelte";
     import WaveAnim from './WaveAnim.svelte';
 
-    const steps = ["<p>Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une intro, puis un couplet… et enfin arrive le refrain. Bref, l’artiste prend le temps… Dans le milieu on appelle ça la formule <span class='font-extrabold'><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p> "
-                  , "Vous avez remarqué ? La chanson est plus courte… mais ce n’est pas la seule chose qui a rétrécit..."
-                  , '<p>intro raccourcie </p>'
-                  , "<p> + morceau globalement plus court <p>"
-                  , " <p>Désormais on entre plus vite dans le vif du sujet avec quelque chose de punchy (dans le milieu on appelle ces quelques notes qui attirent votre oreille un “hook”) et le refrain arrive plus tôt pour bien nous rester en tête. On peut aussi résumer - mais pas toujours - par <span class='font-extrabold'><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p>"
-                  ,"<p> Des intros plus courtes, des morceaux moins longs… Vous ne nous croyez pas ? Nous allons vous le prouver par les datas. </p>"
+    const steps = ["<p> Allons un peu plus dans le détail. Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une longue intro, puis un couplet… et enfin arrive le refrain. Dans le milieu on appelle ça la formule <span class='font-extrabold'><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p> "
+                  , "Mettons de côté la structure quelques instants…"
+                  , '<p> Dans de nombreux morceaux récents, l’intro a rétréci. Désormais on entre plus vite dans le vif du sujet avec quelque chose de punchy.</p>'
+                  , "<p>Le morceau est lui aussi globalement plus court.<p>"
+                  , "<p>Une nouvelle forme fait son apparition, c’est la <span class='font-extrabold'><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span> avec un refrain qui arrive plus tôt pour maintenir l’attention pendant au moins 30 secondes…</p>"
+                  ,"<p class='text-bold text-xl text-center max-w-2xl'> Des intros plus courtes, des morceaux moins longs… Vous ne nous croyez pas ? Nous allons vous le prouver par les datas. </p>"
                 ]
     $: currentStep = 0;
     let bigSeconds = false;
@@ -44,7 +44,7 @@
                 title="Intro" 
                 />
                 {/if}
-            <div class="grid grid-rows-2 grid-cols-2 gap-2 h-fit w-fit p-2 font-medium bg-cardBg bottom-14 left-auto right-auto absolute {currentStep == 5 ? "opacity-50" : "opacity-100"} flex-wrap rounded-lg">
+            <div class="grid grid-rows-2 grid-cols-2 gap-2 h-16 w-fit p-2 font-medium bg-cardBg bottom-14 left-auto right-auto absolute {currentStep == 5 ? "opacity-50" : "opacity-100"} flex-wrap rounded-lg">
                 <div class="flex gap-1">
                   <div class="h-6 w-6 rounded-lg bg-primary"></div>
                   <h3 class=" text-text">Refrain</h3>
@@ -68,7 +68,7 @@
     <Scroll bind:value={currentStep}>
       {#each steps as text, i}
         <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
-          <div class="text-text flex justify-center z-10 bg-background rounded-lg bg-opacity-80 w-screen p-4 md:w-1/2">
+          <div class="text-text flex justify-center z-10 bg-background rounded-lg bg-opacity-80 w-screen p-4 md:w-1/3">
             {@html text}
           </div>
         </div>
