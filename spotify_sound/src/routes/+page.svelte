@@ -8,34 +8,37 @@
     import CardGraph from "./components/cardGraph.svelte";
     import ScrollExemple from './components/ScrollStructure.svelte';
     import SoundButton from './components/soundButton.svelte';
+    import Navbar from './components/Navbar.svelte';
+    import Quote from './components/Quote.svelte';
 
-    // onMount(()=> {
-    // //smooth scroll 
-    // const lenis = new Lenis()
+    onMount(()=> {
+    //smooth scroll 
+    const lenis = new Lenis()
 
-    // lenis.on('scroll', (e) => {
-    // })
+    lenis.on('scroll', (e) => {
+    })
 
-    // function raf(time) {
-    // lenis.raf(time)
-    // requestAnimationFrame(raf)
-    // }
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
 
-    // requestAnimationFrame(raf)
+    requestAnimationFrame(raf)
 
-    // })
+    })
 
     let graphText1 = `«&nbsp;<i>Le genre dominant aujourd'hui, ce n’est plus le rock. C'est le hip hop et tous ses dérivés&nbsp;</i>», observe Rudy Leonet. Pour ce spécialiste de la musique, ce style de musique fait la part belle aux formes courtes et catchy. «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plateformes.&nbsp;</i>»`
 
 </script>
 
+<Navbar/> 
 <Hero/>            
 <div class="h-screen bg-background rounded-2xl relative shadow-[ 0px_-20px_14px_-8px_rgba(5,247,130,0.78)]">
     <div class="max-w-3xl text-text px-4 pt-12 mx-auto text-lg">
         <p class="pt-6 first-letter:text-7xl first-letter:mr-3 first-letter:float-left">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Il y a 15 ans, le 7 octobre 2008, Spotify était lancé en version publique. Le but de cette plate-forme imaginée par les Suédois Daniel Ek et Martin Lorentzon&nbsp;: offrir de la musique à volonté moyennant des publicités ou un abonnement mensuel.</p>
         <p class="pt-6">La force de Spotify, c’est son algorithme qui vous connaît mieux que ne vous connaissait votre médiathécaire dans les années 90. Au point de vous proposer exactement ce que vous avez envie d’entendre au moment où votre humeur l’exige. Avec un revers à la médaille&nbsp;: le petit rond vert vous encercle dans des genres musicaux taillés pour vous plaire.</p>
         <p class="pt-6">Pour les artistes aussi, les choses ont changé. Du côté de la rémunération d’abord - quelques poignées de centimes par écoute sur Spotify - mais aussi dans la manière de composer de la musique. Vous allez le voir dans ce grand format qui compile des milliers de données&nbsp;: tout est une question de secondes cruciales…</p>
-        <p class="pt-6 font-bold text-center text-secondary">Ce récit commence avec du son. Cliquez sur le bouton ci-dessous pour l'activer.</p>
+        <p class="pt-6 font-extrabold text-center">Ce récit commence avec du son. Cliquez sur le bouton ci-dessous pour l'activer.</p>
 
         <SoundButton />
     </div>
@@ -130,7 +133,9 @@
                   où on pouvait enregistrer autour de trois minutes de musique, la musique populaire s'est pliée à ce format-là. Ça fait un peu plus d'un siècle maintenant
                    qu'on tourne avec des chansons qui ont été composées pour pouvoir entrer intégralement sur un support qui a d'abord été le 78 tours, puis le 45 tours, etc.&nbsp;</i>»</p>
 
-                <blockquote>Désormais, le but c'est d'être sur des playlists.</blockquote>
+                <Quote 
+                content="Désormais, le but c'est d'être sur des playlists."
+                color="border-graphicPurple"/>
 
             <p class="pb-2 pt-6">Le musicologue déroule encore le fil&nbsp;: «&nbsp;<i>Dans les années 70 ou 80  
                 - soit au moment où on voulait fixer les gens sur la piste de danse - le support a dicté la forme,
@@ -141,8 +146,10 @@
             <p class="pb-2 pt-6">Rudy Leonet confirme et évoque le cas particulier de la radio&nbsp;: «&nbsp;<i>Tout mode de consommation a impliqué toujours son mode de fabrication.
                  Dans les années 70-80, les très très longs morceaux bénéficiaient de ce que l'on appelait un ‘radio edit’, c'est-à-dire un remontage où on compressait la chanson 
                  en trois minutes ou trois minutes 30, qui est à peu près le format classique qui a perduré pendant des dizaines d'années. C'était juste des petits aménagements,
-                  mais ça ne défigurait pas la chanson et en tout cas, ça n'influençait pas la création originale de la chanson qui avait son développement tel que l'avait voulu l'artiste.&nbsp;</i>»</p>
-        </div>
+                 mais ça ne défigurait pas la chanson et en tout cas, ça n'influençait pas la création originale de la chanson qui avait son développement tel que l'avait voulu l'artiste.&nbsp;</i>»</p>
+                 <img src="https://www.woopets.fr/assets/img/001/244/1200x675/choisir-chien-japonais.jpg" alt="Max Martin, roi des tubes">
+                 <p class="text-sm font-light border-l-4 p-1 mt-1 border-graphicPurple rounded-sm ">Max Martin, roi des tubes à l'origine du "...Baby One More Time" de Britney Spears et compositeur pour Taylor Swift. Ici aux Spotify's Secret Genius Awards le 1er novembre 2017 - Matt Winkelmeyer/Getty Images for Spotify</p>
+                </div>
     </section>
 
     <section class="max-w-6xl mx-auto mb-20">
@@ -176,7 +183,7 @@
             <p class="pb-2 pt-6">Sur le graphique ci-dessous, nous avons placé toutes les chansons répertoriées par Chris Dalla Riva en ne gardant que celles dont l'intro fait 60 secondes ou moins. Pas de doute,
                  même si ce n’est sans doute pas la seule explication&nbsp;: l’arrivée d’une plate-forme de streaming comme Spotify coïncide avec
                   une baisse de la durée moyenne des introductions.</p>
-            <p class="pt-6 font-bold text-center text-secondary">Survolez les points du graphique pour découvrir une chanson en détails.</p>
+            <p class="pt-6 text-xl text-text font-extrabold">Survolez les points du graphique pour découvrir une chanson en détails.</p>
 
         </div>
         <CardGraph 
@@ -202,7 +209,9 @@
                 «&nbsp;<i>Si j’écris une chanson pour un autre grand artiste pop, je veux jouer le grand jeu. Un refrain dans les 30 premières secondes. Pas d'intro étrange et complaisante... 
                 Un hook au début de l'intro, peut-être même en commençant par le refrain, le tout en moins de trois minutes&nbsp;</i>». L’artiste a bien compris l’enjeu&nbsp;: 
                 «&nbsp;<i>Ce qui compte, c'est de savoir si on a réussi à les capter dans les cinq premières secondes. Et l'ont-ils ajouté à leur liste playlist&nbsp;?&nbsp;</i>»</p>
-            <p class="pb-4 pt-6">Ne nous faites pas dire ce que nous n’avons pas dit. Non, tous les genres musicaux n’ont pas changé à cause de Spotify. Et tous les artistes présents sur la plate-forme ne se soumettent pas sans discuter au diktat du chronomètre pour plaire au petit rond vert. Certains s’insurgent même. Tel le groupe britannique The Pocket Gods qui a sorti l’an dernier un album de 1000 chansons de 30 secondes intitulé «&nbsp;<i>Nobody makes money anymore&nbsp;</i>» («&nbsp;<i>plus personne ne gagne d’argent aujourd’hui&nbsp;</i>»). </p>
+                <img src="https://www.woopets.fr/assets/img/001/244/1200x675/choisir-chien-japonais.jpg" alt="charlie XCX">
+                <p class="text-sm font-light border-l-4 p-1 mt-1 border-primary rounded-sm">L'artiste Charli XCX à Londres, le 17 septembre 2023 - Dave Benett/Getty Images for MAC Cosmetics</p>
+                <p class="pb-4 pt-6">Ne nous faites pas dire ce que nous n’avons pas dit. Non, tous les genres musicaux n’ont pas changé à cause de Spotify. Et tous les artistes présents sur la plate-forme ne se soumettent pas sans discuter au diktat du chronomètre pour plaire au petit rond vert. Certains s’insurgent même. Tel le groupe britannique The Pocket Gods qui a sorti l’an dernier un album de 1000 chansons de 30 secondes intitulé «&nbsp;<i>Nobody makes money anymore&nbsp;</i>» («&nbsp;<i>plus personne ne gagne d’argent aujourd’hui&nbsp;</i>»). </p>
             <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de la plateforme. «&nbsp;<i>Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll&nbsp;</i>» chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
             <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). «&nbsp;<i>On n’est pas devenu riches avec ça&nbsp;</i>», s’amuse-t-il.</p>
             <p class="pb-4 pt-6">L’artiste que nous avons contacté en profite pour glisser ceci&nbsp;: «&nbsp;<i>On est à blâmer aussi en tant que consommateur parce qu’on veut tout gratuitement. Ce n’est pas juste la grande méchante industrie.&nbsp;</i>» Autant de propos qu'il développe dans un récent documentaire long de trois heures <a href='https://www.youtube.com/watch?v=ZDKGANItoCI' target='_blank' rel=noreferrer>et disponible gratuitement sur YouTube</a>. 

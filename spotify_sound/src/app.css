@@ -12,6 +12,11 @@
 body {
     background-color: #121212;
 }
+
+a {
+    text-decoration: underline;
+    color: #E9B327;
+}
 /* div {
     border: 2px solid red;
 }

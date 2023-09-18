@@ -12,12 +12,12 @@
 </script>
 
 
-<div class="relative h-60">
+<div class="relative h-28">
     <div class="wrap  top-20">
         <div class="block">
           <span>son</span>
-          <input data-index="0" id="cheap" type="checkbox" bind:checked={checked}/>
-          <label for="cheap"></label>
+          <input data-index="0" id="son" type="checkbox" bind:checked={checked}/>
+          <label for="sond"></label>
         </div>
     </div>
 </div>

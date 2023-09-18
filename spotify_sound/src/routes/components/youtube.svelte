@@ -53,10 +53,11 @@
     </div>
     {:else}
     <div transition:slide class="flex gap-4 justify-items-end items-center">
-
-            <iframe src="https://www.youtube.com/embed/{songSource}?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end={end}&amp;width=560&amp;width=560&amp;controls=0&amp;modestbranding=1&amp;" width="250" height="142" allowtransparency="true" modestbranding="1" controls="0" frameborder="0"></iframe>
+            {#if step == currentStep}
+            <iframe transition:fade src="https://www.youtube.com/embed/{songSource}?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;autohide=1&amp;color=red&amp;start=0&amp;end={end}&amp;width=560&amp;width=560&amp;controls=0&amp;modestbranding=1&amp;" width="250" height="142" title="embed youtube vidéo du clip de la chanson" allowtransparency="true" modestbranding="1" controls="0" frameborder="0"></iframe>
             <p class="text-text text-sm font-semibold">{Duration}</p>
-    </div>
+            {/if}
+        </div>
     {/if}
 </div>
 

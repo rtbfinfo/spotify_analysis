@@ -59,6 +59,14 @@
                 end=7
                 />
               {/if}
+            {:else}
+            <div class="flex flex-col items-center gap-4 absolute top-10 text-text">
+              <p>scrollez</p>
+              <svg width="47" class="motion-safe:animate-bounce " height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.8889 23C46.8889 10.2975 36.5914 -4.50116e-07 23.8889 -1.00536e-06C11.1863 -1.56061e-06 0.888885 10.2974 0.888884 23C0.888884 35.7025 11.1863 46 23.8889 46C36.5914 46 46.8889 35.7025 46.8889 23ZM16.6551 18C15.8778 18 15.3977 18.848 15.7976 19.5145L23.0314 31.5708C23.4198 32.2182 24.358 32.2182 24.7464 31.5708L31.9802 19.5145C32.3801 18.848 31.9 18 31.1227 18L23.8889 18L16.6551 18Z" fill="white"/>
+                </svg>
+                
+            </div>
             {/if}
         </div>
     </div>
