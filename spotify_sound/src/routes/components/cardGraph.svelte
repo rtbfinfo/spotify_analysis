@@ -46,7 +46,7 @@
 
         <div class="md:basis-1/2 py-4">
             <h1 class="text-2xl">{title}</h1>
-            <p class="text-lg font-light">{textContent}</p>
+            <p class="text-lg font-light">{@html textContent}</p>
         </div>
     </div>
 

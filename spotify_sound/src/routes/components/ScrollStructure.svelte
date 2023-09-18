@@ -6,7 +6,7 @@
     import WaveAnim from './WaveAnim.svelte';
 
     const steps = ["<p> Allons un peu plus dans le détail. Voici une chanson pop type comme on en a toujours fait pendant des années. La recette a longtemps été synonyme de succès : on installe tranquillement le thème avec une longue intro, puis un couplet… et enfin arrive le refrain. Dans le milieu on appelle ça la formule <span class='font-extrabold'><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span></p> "
-                  , "Mettons de côté la structure quelques instants…"
+                  , "Mettons de côté la structure quelques instants pour nous concentrer sur la longueur."
                   , '<p> Dans de nombreux morceaux récents, l’intro a rétréci. Désormais on entre plus vite dans le vif du sujet avec quelque chose de punchy.</p>'
                   , "<p>Le morceau est lui aussi globalement plus court.<p>"
                   , "<p>Une nouvelle forme fait son apparition, c’est la <span class='font-extrabold'><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-graphicPurple'>A</span><span class='text-primary'>B</span><span class='text-secondary'>C</span><span class='text-primary'>B</span></span> avec un refrain qui arrive plus tôt pour maintenir l’attention pendant au moins 30 secondes…</p>"
