@@ -30,7 +30,6 @@
             <CardWave
               step=0
               currentStep={currentStep}
-              title="Base"
               />
                 {#if currentStep >= 1 && currentStep < 4}
                 <WaveAnim
@@ -41,7 +40,6 @@
                 <CardWave 
                 step=4
                 currentStep={currentStep}
-                title="Intro" 
                 />
                 {/if}
             <div class="grid grid-rows-2 grid-cols-2 gap-2 h-16 w-fit p-2 font-medium bg-cardBg bottom-14 left-auto right-auto absolute {currentStep == 5 ? "opacity-50" : "opacity-100"} flex-wrap rounded-lg">
@@ -67,7 +65,7 @@
   
     <Scroll bind:value={currentStep}>
       {#each steps as text, i}
-        <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
+        <div class="flex place-items-start justify-center h-screen" class:active={currentStep === i}>
           <div class="text-text flex justify-center z-10 bg-background rounded-lg bg-opacity-80 w-screen p-4 md:w-1/3">
             {@html text}
           </div>

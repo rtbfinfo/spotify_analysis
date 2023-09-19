@@ -1,21 +1,14 @@
 <script>
-    export let content = String;
-    export let color = String;
+    export let content;
+    export let color;
 </script>
 
-
-<div class="wrapper font-extrabold border-primary only:{color}" >
+<div class="wrapper font-extrabold {color} border-l-[10px] pl-2 rounded-xl" >
     <p>"{content}"</p>
 </div>
 
 <style>
-    p {
-        text-align: left;
-        border-left: 10px solid;
-        padding-left: 0.5rem;
-        border-radius: 0.5rem;
 
-    }
         .wrapper {
         max-width: 50rem;
         margin-inline: auto;

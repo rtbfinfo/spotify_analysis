@@ -9,7 +9,6 @@
                   , "Vous l’avez compris maintenant: l’introduction est à chaque fois plus courte. Ces trois titres choisis pas tout à fait au hasard représentent en fait bien une évolution dans la façon de composer des tubes." ]
                   let currentStep = 0;
     let bigSeconds = false;
-    $: console.log(currentStep);
 
     $: if (currentStep == 3) {
       bigSeconds = true;
@@ -70,7 +69,7 @@
   
     <Scroll bind:value={currentStep}>
       {#each steps as text, i}
-        <div class="flex place-items-center justify-center h-screen" class:active={currentStep === i}>
+        <div class="flex place-items-start justify-center h-screen" class:active={currentStep === i}>
           <div class="text-text flex justify-center z-10 flex-col bg-background rounded-lg bg-opacity-80 w-screen md:w-1/2 p-4">
             {@html text}
           </div>

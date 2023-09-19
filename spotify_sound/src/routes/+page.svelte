@@ -61,7 +61,7 @@
 
                  <Quote 
                 content="Un auditeur sur cinq zappe la chanson après cinq secondes"
-                color="border-graphicPurple"/>
+                color="border-primary"/>
             
                  <p class="pb-2 pt-6">C'est logique&nbsp;: pour être écouté, il faut capter l’attention dès les premières notes… 
                 et puis tout faire pour garder l’auditeur jusqu’aux trente secondes fatidiques. «&nbsp;<i>Quand on sait que 21% - donc un auditeur sur cinq - zappe 
@@ -74,7 +74,7 @@
             
                  <Quote 
                  content="C'est le côté catchy du titre qui va être prédominant"
-                 color="border-graphicPurple"/>
+                 color="border-primary"/>
             
             <p class="pb-2 pt-6">Rudy Leonet complète&nbsp;: «&nbsp;<i>On raccourcit les intros ou on les supprime. La voix doit arriver vite,
                  si possible avec le refrain déjà en ouverture. Un seul mot doit venir rapidement dans la chanson. C'est un moyen mnémotechnique de la retenir.
@@ -194,15 +194,21 @@
             <p class="pt-6 text-xl text-text font-extrabold">Survolez les points du graphique pour découvrir une chanson en détails.</p>
 
         </div>
-        <CardGraph 
-            size="big"
-            flourishId="14991590"
-            title="Evolution de la durée des intros du Billboard Hot 100 (60 secondes ou moins)"
-            textContent=""/>
+        <div class="relative">
+            <CardGraph 
+                size="big"
+                flourishId="14991590"
+                title="Evolution de la durée des intros du Billboard Hot 100 (60 secondes ou moins)"
+                textContent=""/>
+                <div class="absolute top-10 left-10 md:left-16 flex gap-1">
+                    <div class="h-4 w-4 rounded-lg bg-graphicPurple"></div>
+                    <p class="text-text text-[12px] font-bold ">Moyenne glissante sur 5 ans</p>
+                </div>
+        </div>
 
     </section>
        
-    <section class="max-w-3xl mx-auto mb-20">
+    <section class="max-w-3xl mx-auto mb-10">
         <Title
             txt="Une recette poussée jusqu’à l’absurde"
             partie={5}
@@ -224,14 +230,31 @@
             
                 <Quote 
                 content="Il faut d'abord être sur quelque chose qui nous plaît"
-                color="border-graphicPurple"/>
+                color="border-primary"/>
            
             
                 <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). «&nbsp;<i>On n’est pas devenu riches avec ça&nbsp;</i>», s’amuse-t-il.</p>
             <p class="pb-4 pt-6">L’artiste que nous avons contacté en profite pour glisser ceci&nbsp;: «&nbsp;<i>On est à blâmer aussi en tant que consommateur parce qu’on veut tout gratuitement. Ce n’est pas juste la grande méchante industrie.&nbsp;</i>» Autant de propos qu'il développe dans un récent documentaire long de trois heures <a href='https://www.youtube.com/watch?v=ZDKGANItoCI' target='_blank' rel=noreferrer>et disponible gratuitement sur YouTube</a>. 
-            <p class="pb-4 pt-6 mb-12">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. «&nbsp;<i>Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite&nbsp;</i>», assure le musicien bruxellois Doowy. «&nbsp;<i>S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide&nbsp;</i>», conclut l’interprète du tout récent «&nbsp;<i>Premières fois&nbsp;</i>»… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes et 41 secondes. Pile dans les temps.</p>
+            <p class="pb-4 pt-6 mb-10">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. «&nbsp;<i>Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite&nbsp;</i>», assure le musicien bruxellois Doowy. «&nbsp;<i>S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide&nbsp;</i>», conclut l’interprète du tout récent «&nbsp;<i>Premières fois&nbsp;</i>»… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes et 41 secondes. Pile dans les temps.</p>
         </div>
     </section>
-   
+
+    <div class="text-text flex  md:flex-row flex-col justify-center mx-auto p-4">
+        <div class="m-4 flex-col flex gap-2 text-right">
+            <h6 class="text-xl font-extrabold">Ambroise Carton</h6>
+            <p class="text-primary">écriture et datas</p>
+        </div>
+        <div class="w-2 m-4 bg-primary rounded-xl"></div>
+        <div class="m-4 flex-col flex gap-2 text-center">
+            <h6 class="text-xl font-extrabold">Héloïse Feldmann</h6>
+            <p class="text-primary">Design et Web développement</p>
+        </div>
+        <div class="w-2 m-4 bg-primary rounded-xl"></div>
+        <div class="m-4 flex-col flex gap-2 ">
+            <h6 class="text-xl font-extrabold">Sarah Heinderyckx</h6>
+            <p class="text-primary">Journaliste</p>
+        </div>
+    </div>
+    <div class="h-14"></div>
 </div>
 

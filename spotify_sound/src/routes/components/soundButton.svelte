@@ -15,8 +15,8 @@
 </script>
 
 <div class="m-4 flex justify-center">
-  <input type="checkbox" class="demo1" id="demo1" bind:checked={checked}>
-  <label for="demo1"><svg width="64" class="scale-90" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+  <input type="checkbox" class="demo1" id="demo1" bind:checked={checked} name="son">
+  <label for="demo1" name="son"><svg width="64" class="scale-90" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
     <path d={label} stroke-width="0.5" stroke="white"/>
     </svg></label>
 </div>
