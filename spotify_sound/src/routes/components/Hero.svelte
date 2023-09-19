@@ -6,7 +6,7 @@
 <div class="text-text text-center h-screen flex flex-col justify-center items-center gap-8 bg-cardBg z-0 sticky top-0">
     <h4 class="text-sm">Décrypte</h4>
     <h1 class="md:text-6xl text-5xl font-extrabold tracking-tighter max-w-4xl" style="text-wrap: balance;">Comment <span class="text-primary">Spotify</span> a changé la façon de composer la <span class="text-secondary">musique</span></h1>
-    <div class="sound-wave flex gap-2 justify-center h-fit w-screen">
+    <div class="sound-wave flex gap-2 justify-center h-fit w-[99%]">
         {#each Array(25) as _, index (index)}
             <div class=" bar w-2 h-full bg-primary rounded-md overflow-hidden" style="animation-duration:{Math.random() * (1.5 - 0.5) + 0.5}s"></div>
         {/each}
