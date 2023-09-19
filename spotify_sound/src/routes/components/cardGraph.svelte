@@ -1,7 +1,5 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    import { inview } from 'svelte-inview';
-    import type { ObserverEventDetails, ScrollDirection, Options } from 'svelte-inview';
     
     export let size: String;
     export let title: String;
@@ -9,7 +7,6 @@
     export let flourishId: String;
 
     let classes ="";
-    let isInView: boolean;
 
     if(size == "small") {
         classes = "md:flex md:flex-row md:items-center md:gap-4"
@@ -22,15 +19,6 @@
 
 </script>
 
-
-<!-- <div class="wrapper mt-8"
-    use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-    on:inview_change={(event) => {
-        let { inView, entry, scrollDirection, observer, node} = event.detail;
-        isInView = inView;
-        scrollDirection = scrollDirection.vertical;
-      }}>
-  {#if isInView} -->
     <div  in:fade class="bg-cardBg rounded-lg mx-3 p-2 text-text my-10 {classes} py-2">
         {#if flourishId == "14991590"}
         <div class="iframe-container bg-background rounded-lg md:basis-1/2 mx-auto">

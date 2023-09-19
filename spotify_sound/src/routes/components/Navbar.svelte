@@ -2,7 +2,7 @@
     import { fade } from "svelte/transition";
     import { onMount } from "svelte";
     
-    let y
+    let y;
 
     onMount(() => {
         let processScroll = () => {

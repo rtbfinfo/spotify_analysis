@@ -1,7 +1,4 @@
-<script lang="ts">
-    import { onMount } from "svelte";
 
-</script>
 
 <div class="text-text text-center h-screen flex flex-col justify-center items-center gap-8 bg-cardBg z-0 sticky top-0">
     <h4 class="text-sm">Décrypte</h4>

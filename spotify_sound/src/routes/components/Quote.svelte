@@ -2,6 +2,8 @@
     export let content = String;
     export let color = String;
 </script>
+
+
 <div class="wrapper font-extrabold border-primary only:{color}" >
     <p>"{content}"</p>
 </div>

@@ -27,8 +27,6 @@
 
     })
 
-    let graphText1 = `«&nbsp;<i>Le genre dominant aujourd'hui, ce n’est plus le rock. C'est le hip hop et tous ses dérivés&nbsp;</i>», observe Rudy Leonet. Pour ce spécialiste de la musique, ce style de musique fait la part belle aux formes courtes et catchy. «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plates-formes.&nbsp;</i>»`
-
 </script>
 
 <Navbar/> 
@@ -144,8 +142,8 @@
                    qu'on tourne avec des chansons qui ont été composées pour pouvoir entrer intégralement sur un support qui a d'abord été le 78 tours, puis le 45 tours, etc.&nbsp;</i>»</p>
 
                 <Quote 
-                content="Désormais, le but c'est d'être sur des playlists"
-                color="border-graphicPurple"/>
+                content={"Désormais, le but c'est d'être sur des playlists."}
+                color={"border-graphicPurple"}/>
 
             <p class="pb-2 pt-6">Le musicologue déroule encore le fil&nbsp;: «&nbsp;<i>Dans les années 70 ou 80  
                 - soit au moment où on voulait fixer les gens sur la piste de danse - le support a dicté la forme,

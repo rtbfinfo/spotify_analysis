@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
     import { fade,slide } from "svelte/transition";
-    export let currentStep
+    export let currentStep: number;
 
     $: console.log(plusCourt)
     let intro = true;

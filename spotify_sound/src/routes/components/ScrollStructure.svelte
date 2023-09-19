@@ -1,6 +1,5 @@
 <script lang="ts">
-    import { fly,fade } from 'svelte/transition';
-    import { afterUpdate } from "svelte";
+    import { fade } from 'svelte/transition';
     import CardWave from "./CardWave.svelte";
     import Scroll from "./Scrolly.svelte";
     import WaveAnim from './WaveAnim.svelte';
@@ -13,15 +12,7 @@
                   ,"<p class='text-bold text-xl text-center max-w-2xl'> Des intros plus courtes, des morceaux moins longs… Vous ne nous croyez pas ? Nous allons vous le prouver par les datas. </p>"
                 ]
     $: currentStep = 0;
-    let bigSeconds = false;
 
-    $: console.log(currentStep)
-
-    $: if (currentStep == 3) {
-      bigSeconds = true;
-    } else {
-      bigSeconds = false;
-    }
 </script>
 
 <section>
