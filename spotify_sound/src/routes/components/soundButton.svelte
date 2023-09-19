@@ -1,6 +1,5 @@
 <script>
     import { sound } from "../store";
-    import { fade } from "svelte/transition";
 
     let checked = false;
     let label = "M35.0752 1.16794C35.7465 1.45114 36.2185 2.05243 36.3456 2.75271L36.3798 3.15553V32.1114V61.0885C36.3798 61.9482 35.8639 62.7242 35.0711 63.0567C34.398 63.339 33.6366 63.2549 33.0466 62.8543L32.7347 62.5962L17.3318 47.464L17.1859 47.3207H16.9814H7.90285C4.05919 47.3207 0.899151 44.3908 0.535037 40.6431L0.5 39.906V24.1702C0.5 20.3266 3.42979 17.1665 7.17763 16.8024L7.91475 16.7674H16.9879H17.1912L17.3368 16.6256L32.7564 1.60551C33.3711 1.00672 34.2846 0.834345 35.0752 1.16794Z";
@@ -17,16 +16,11 @@
 
 <div class="m-4 flex justify-center">
   <input type="checkbox" class="demo1" id="demo1" bind:checked={checked}>
-  <label role="button" for="demo1"><svg width="64" class="scale-90" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+  <label for="demo1"><svg width="64" class="scale-90" height="64" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
     <path d={label} stroke-width="0.5" stroke="white"/>
     </svg></label>
 </div>
-
-
-  
-
     
-
 <style>
 
 input[type="checkbox"].demo1 {
@@ -43,62 +37,4 @@ input[type="checkbox"].demo1 + label {
 input[type="checkbox"].demo1:checked + label {
   background-color: #04C28F;
 }
-
-    /* input{
-  display:none;  
-}
-.block{
-  width:200px;
-  position:relative;
-  clear:both;
-  margin:0 0 25px;
-  float: left;
-}
-span{
-  text-transform:uppercase;
-  font-weight:bold;
-  letter-spacing:1px;
-  font-size:15px;
-  float:right;
-  width:85px;
-  margin:16px 0 0;
-}
-.wrap{
-  width:200px;
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  padding:30px 30px 5px;
-}
-label{
-  width:100px;
-  height:50px;
-  box-sizing:border-box;
-  border:3px solid;
-  float:left;
-  border-radius:100px;
-  position:relative;
-  cursor:pointer;
-  transition:.3s ease;
-}
-input[type=checkbox]:checked + label{
-  background:#04C28F;
-}
-input[type=checkbox]:checked + label:before{
-  left:50px;
-}
-label:before{
-  transition:.3s ease;
-  content:'';
-  width:40px;
-  height:40px;
-  position:absolute;
-  background:white;
-  left:2px;
-  top:2px;
-  box-sizing:border-box;
-  color:black;
-  border-radius:100px;
-} */
 </style>
