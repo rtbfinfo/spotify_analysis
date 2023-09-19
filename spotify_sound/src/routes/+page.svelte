@@ -227,12 +227,13 @@
                 <p class="text-sm font-light border-l-4 p-1 mt-1 border-primary rounded-sm">L'artiste Charli XCX à Londres, le 17 septembre 2023 - Dave Benett/Getty Images for MAC Cosmetics</p>
                 <p class="pb-4 pt-6">Ne nous faites pas dire ce que nous n’avons pas dit. Non, tous les genres musicaux n’ont pas changé à cause de Spotify. Et tous les artistes présents sur la plate-forme ne se soumettent pas sans discuter au diktat du chronomètre pour plaire au petit rond vert. Certains s’insurgent même. Tel le groupe britannique The Pocket Gods qui a sorti l’an dernier un album de 1000 chansons de 30 secondes intitulé «&nbsp;<i>Nobody makes money anymore&nbsp;</i>» («&nbsp;<i>plus personne ne gagne d’argent aujourd’hui&nbsp;</i>»). </p>
             <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de Spotify. «&nbsp;<i>Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll&nbsp;</i>» chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
-            
+        </div>
+
                 <Quote 
                 content="Il faut d'abord être sur quelque chose qui nous plaît"
                 color="border-primary"/>
            
-            
+        <div class="max-w-3xl text-text px-4 mx-auto text-lg">
                 <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). «&nbsp;<i>On n’est pas devenu riches avec ça&nbsp;</i>», s’amuse-t-il.</p>
             <p class="pb-4 pt-6">L’artiste que nous avons contacté en profite pour glisser ceci&nbsp;: «&nbsp;<i>On est à blâmer aussi en tant que consommateur parce qu’on veut tout gratuitement. Ce n’est pas juste la grande méchante industrie.&nbsp;</i>» Autant de propos qu'il développe dans un récent documentaire long de trois heures <a href='https://www.youtube.com/watch?v=ZDKGANItoCI' target='_blank' rel=noreferrer>et disponible gratuitement sur YouTube</a>. 
             <p class="pb-4 pt-6 mb-10">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. «&nbsp;<i>Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite&nbsp;</i>», assure le musicien bruxellois Doowy. «&nbsp;<i>S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide&nbsp;</i>», conclut l’interprète du tout récent «&nbsp;<i>Premières fois&nbsp;</i>»… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes et 41 secondes. Pile dans les temps.</p>
@@ -244,12 +245,12 @@
             <h6 class="text-xl font-extrabold">Ambroise Carton</h6>
             <p class="text-primary">écriture et datas</p>
         </div>
-        <div class="w-2 m-4 bg-primary rounded-xl"></div>
+        <div class="w-1 m-4 bg-primary rounded-xl"></div>
         <div class="m-4 flex-col flex gap-2 text-center">
             <h6 class="text-xl font-extrabold">Héloïse Feldmann</h6>
             <p class="text-primary">Design et Web développement</p>
         </div>
-        <div class="w-2 m-4 bg-primary rounded-xl"></div>
+        <div class="w-1 m-4 bg-primary rounded-xl"></div>
         <div class="m-4 flex-col flex gap-2 ">
             <h6 class="text-xl font-extrabold">Sarah Heinderyckx</h6>
             <p class="text-primary">Journaliste</p>

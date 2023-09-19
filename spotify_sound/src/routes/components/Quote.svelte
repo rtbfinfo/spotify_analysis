@@ -3,7 +3,7 @@
     export let color;
 </script>
 
-<div class="wrapper font-extrabold {color} border-l-[10px] pl-2 rounded-xl" >
+<div class="wrapper font-extrabold {color} border-l-[10px] rounded-xl" >
     <p>"{content}"</p>
 </div>
 
@@ -15,7 +15,6 @@
         margin-block: 1rem;
         font-size: 20px;
         color: white;
-        text-align: center;
         padding-inline: 1rem;
     }
 </style>

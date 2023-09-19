@@ -26,6 +26,10 @@
        
         <iframe src='https://flo.uri.sh/visualisation/15032377/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
      </div>
+        {:else if flourishId == "14936027"}
+        <div class="bg-background rounded-lg md:basis-1/2 mx-auto">
+            <iframe src='https://flo.uri.sh/visualisation/{flourishId}/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;' class="h-80 md:h-[600px] p-1"sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+            </div>
         {:else}
             <div class="bg-background rounded-lg md:basis-1/2 mx-auto">
             <iframe src='https://flo.uri.sh/visualisation/{flourishId}/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;' class="h-80 md:h-96 p-1"sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
