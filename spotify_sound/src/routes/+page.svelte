@@ -27,7 +27,7 @@
 
     })
 
-    let graphText1 = `«&nbsp;<i>Le genre dominant aujourd'hui, ce n’est plus le rock. C'est le hip hop et tous ses dérivés&nbsp;</i>», observe Rudy Leonet. Pour ce spécialiste de la musique, ce style de musique fait la part belle aux formes courtes et catchy. «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plateformes.&nbsp;</i>»`
+    let graphText1 = `«&nbsp;<i>Le genre dominant aujourd'hui, ce n’est plus le rock. C'est le hip hop et tous ses dérivés&nbsp;</i>», observe Rudy Leonet. Pour ce spécialiste de la musique, ce style de musique fait la part belle aux formes courtes et catchy. «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plates-formes.&nbsp;</i>»`
 
 </script>
 
@@ -59,17 +59,27 @@
                  peut-on lire <a href='https://loudandclear.byspotify.com/fr-FR/' target='_blank' rel=noreferrer>sur le site loudandclear.byspotify.com</a>, une page qui vise à répondre aux attaques contre le business model de l’entreprise. 
                  La même source précise qu’«&nbsp;<i>à l’ère du streaming, les fans ne paient pas par titre. C’est pourquoi nous ne pensons pas qu’un ‘tarif par écoute’ 
                  soit un chiffre pertinent à analyser. À l’instar de tous les autres services de streaming majeurs, Spotify verse des royalties sur 
-                 la base du nombre d’écoutes d’un ou une artiste par rapport à toutes les écoutes sur la plateforme. On parle de ‘part d’écoutes’.&nbsp;</i>».</p>
-            <p class="pb-2 pt-6">Une chose est sûre&nbsp;: pour être écouté, il faut capter l’attention dès les premières notes… 
-                et puis tout faire pour garder l’auditeur jusqu’aux trente secondes fatidiques. «&nbsp;<i>Quand on sait que 21 % donc un auditeur sur cinq zappe 
+                 la base du nombre d’écoutes d’un ou une artiste par rapport à toutes les écoutes sur la plate-forme. On parle de ‘part d’écoutes’.&nbsp;</i>».</p>
+
+                 <Quote 
+                content="Un auditeur sur cinq zappe la chanson après cinq secondes"
+                color="border-graphicPurple"/>
+            
+                 <p class="pb-2 pt-6">C'est logique&nbsp;: pour être écouté, il faut capter l’attention dès les premières notes… 
+                et puis tout faire pour garder l’auditeur jusqu’aux trente secondes fatidiques. «&nbsp;<i>Quand on sait que 21% - donc un auditeur sur cinq - zappe 
                 la chanson après cinq secondes parce qu'elle ne lui a pas donné satisfaction… l'idée c'est d'essayer, en 30 secondes, de dire un maximum 
-                de choses pour retenir l'auditeur et pouvoir alors avoir la rétribution et la rémunération dues pour cette écoute&nbsp;</i>», professe Rudy Leonet.</p>
+                de choses pour retenir l'auditeur et pouvoir avoir la rétribution et la rémunération dues pour cette écoute&nbsp;</i>», professe Rudy Leonet.</p>
             <p class="pb-2 pt-6">Résultat, observe Christophe Pirenne, musicologue et professeur à l’UCLouvain, 
                 «&nbsp;<i>ce qui arrive le plus souvent dans tous ces titres ultra-populaires, c’est que le ‘hook’, 
                 cette petite mélodie d’accroche, doit venir presque tout de suite […] Mais ça, ça vaut pour une partie des répertoires.
                  La majeure partie des artistes restent quand même plutôt liés à des formes traditionnelles d'écriture ou de composition.&nbsp;</i>»</p>
-            <p class="pb-2 pt-6">Rudy Leonet complète&nbsp;: «&nbsp;<i>On raccourcit les intros ou on les supprime. La voix doit arriver très vite,
-                 si possible avec le refrain déjà en ouverture. Un seul mot doit venir très vite dans la chanson. C'est un moyen mnémotechnique de la retenir.
+            
+                 <Quote 
+                 content="C'est le côté catchy du titre qui va être prédominant"
+                 color="border-graphicPurple"/>
+            
+            <p class="pb-2 pt-6">Rudy Leonet complète&nbsp;: «&nbsp;<i>On raccourcit les intros ou on les supprime. La voix doit arriver vite,
+                 si possible avec le refrain déjà en ouverture. Un seul mot doit venir rapidement dans la chanson. C'est un moyen mnémotechnique de la retenir.
                   Donc on est tout de suite dans ce qui va procurer le plaisir le plus immédiat et le plus rapide.&nbsp;</i>» Et là, on songe immédiatement aux «&nbsp;<i>flowers&nbsp;</i>» (fleurs) 
                   qui ponctuent le refrain du titre éponyme de Miley Cyrus.</p>
             <p class="pb-2 pt-6"> «&nbsp;<i>Je pense que c'est le côté catchy du titre qui va être prédominant, 
@@ -97,28 +107,28 @@
 
         <CardGraph 
             size="small"
-            title="Les genres les plus populaires"
+            title="La pop au top"
             flourishId="14990472"
             textContent={ `«&nbsp;<i>Le genre dominant aujourd'hui, ce n’est plus le rock. C'est le hip hop et tous ses dérivés&nbsp;</i>»,
              observe Rudy Leonet. Pour ce spécialiste de la musique, ce style de musique fait la part belle aux formes courtes et catchy. 
-             «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plateformes.&nbsp;</i>»`}/>
+             «&nbsp;<i>Ce genre-là se prête parfaitement à ce type de format qui est compressible et restructuré à volonté en fonction des besoins et des demandes et des plates-formes.&nbsp;</i>»`}/>
         <CardGraph 
             size="big"
             flourishId="14936027"
-            title="Toujours plus court"
+            title="34 secondes de moins"
             textContent={`La durée des titres est en chute libre depuis 15 ans pour perdre environ 34 secondes en moyenne entre 2008 et 2023. 
             Des titres globalement plus courts, c’est un bon moyen d’augmenter le nombre total d’écoutes… mais cela demande des ajustements en radio.
              Selon Olivier Duerinckx, «&nbsp;<i>d'une façon générale, les disques et les titres sont effectivement plus courts. Je pense qu'il y a encore quelques mois,
-              quelques années, la durée moyenne était aux alentours de 3min20 ou 3min40 et maintenant on est clairement plutôt autour des trois minutes,
+              quelques années, la durée moyenne était aux alentours de 3 minutes 20 ou 3 minutes 40 et maintenant on est clairement plutôt autour des trois minutes,
                ce qui nous a parfois obligés à rallonger nos conducteurs d'un titre parce que sinon on arrivait trop court en fin d’heure&nbsp;</i>».`}/>
         <CardGraph 
             size="small"
             flourishId="15019115" 
-            title="Cote de popularité"
+            title="3 minutes pour plaire"
             textContent={` Si on met en perspective la durée d’un morceau et sa popularité, une cible rouge se forme 
            &nbsp;: les titres «&nbsp;<i>qui marchent&nbsp;</i>» se situent majoritairement autour des 3 minutes. Bien sûr, il reste des 
             artistes qui obtiennent une bonne cote de popularité avec des morceaux longs. C’est ce qu’on pourrait appeler 
-            «&nbsp;<i>l’exception Taylor Swift&nbsp;</i>»&nbsp;: quoi que la chanteuse américaine fasse, ça cartonne. Tel son «&nbsp;<i>All Too Well 
+            «&nbsp;<i>l’exception Taylor Swift&nbsp;</i>»&nbsp;: quoi que la chanteuse américaine fasse, ça cartonne. Tel ce (long) «&nbsp;<i>All Too Well 
             (10 minutes version)&nbsp;</i>» en haut à droite du graphique. Quand on est une artiste internationale de cette envergure, on peut tout se permettre. `}/>
         </div>
     </section>
@@ -134,7 +144,7 @@
                    qu'on tourne avec des chansons qui ont été composées pour pouvoir entrer intégralement sur un support qui a d'abord été le 78 tours, puis le 45 tours, etc.&nbsp;</i>»</p>
 
                 <Quote 
-                content="Désormais, le but c'est d'être sur des playlists."
+                content="Désormais, le but c'est d'être sur des playlists"
                 color="border-graphicPurple"/>
 
             <p class="pb-2 pt-6">Le musicologue déroule encore le fil&nbsp;: «&nbsp;<i>Dans les années 70 ou 80  
@@ -142,11 +152,11 @@
                  avec le disco et les maxi-single. Et puis quand les CD sont arrivés, il fallait remplir un bazar 
                  qui pouvait contenir 82 ou 83 minutes de musique. Et donc là on a eu des albums beaucoup plus longs. 
                  Aujourd’hui, on revient complètement en arrière. La nouvelle norme avec le streaming, c'est de nouveau le single. 
-                 Désormais, le but c'est d'être sur des playlists. Et vous ne pouvez pas flanquer tout un album sur une playlist.&nbsp;</i>»</p>
+                 Désormais, le but c'est d'être sur des playlists. Et vous ne pouvez pas y flanquer tout un album.&nbsp;</i>»</p>
             <p class="pb-2 pt-6">Rudy Leonet confirme et évoque le cas particulier de la radio&nbsp;: «&nbsp;<i>Tout mode de consommation a impliqué toujours son mode de fabrication.
                  Dans les années 70-80, les très très longs morceaux bénéficiaient de ce que l'on appelait un ‘radio edit’, c'est-à-dire un remontage où on compressait la chanson 
                  en trois minutes ou trois minutes 30, qui est à peu près le format classique qui a perduré pendant des dizaines d'années. C'était juste des petits aménagements,
-                 mais ça ne défigurait pas la chanson et en tout cas, ça n'influençait pas la création originale de la chanson qui avait son développement tel que l'avait voulu l'artiste.&nbsp;</i>»</p>
+                 mais ça ne défigurait pas la chanson et en tout cas, ça n'influençait pas la création originale qui avait son développement tel que l'avait voulu l'artiste.&nbsp;</i>»</p>
                  <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/max_martin.jpg" alt="Max Martin, roi des tubes">
                  <p class="text-sm font-light border-l-4 p-1 mt-1 border-graphicPurple rounded-sm ">Max Martin, roi des tubes à l'origine du "...Baby One More Time" de Britney Spears et compositeur pour Taylor Swift. Ici aux Spotify's Secret Genius Awards le 1er novembre 2017 - Matt Winkelmeyer/Getty Images for Spotify</p>
                 </div>
@@ -158,7 +168,7 @@
             partie={4}
             color="bg-secondary"/>
         <div class="max-w-3xl text-text px-4 mx-auto text-lg">
-            <p class="pb-2 pt-6">Elargissons donc le spectre et regardons comment la musique populaire a évolué depuis le milieu du siècle dernier. 
+            <p class="pb-2 pt-6">Élargissons donc le spectre et regardons comment la musique populaire a évolué depuis le milieu du siècle dernier. 
                 Nous nous sommes procuré un jeu de données gigantesque. Ce fichier de plusieurs milliers de lignes et de colonnes est l’œuvre de Chris Dalla Riva, 
                 un musicien passionné de données. Celui qui est aussi l’auteur <a href='https://chrisdallariva.substack.com/' target='_blank' rel=noreferrer>du site Can’t Get Much Higher</a> a en effet compilé tous les titres du Billboard Hot 100 américain (le classement hebdomadaire des 100 chansons les plus populaires établi par le magazine américain Billboard) de
                 puis la fin des années 50… et il a tout compté&nbsp;: la durée des morceaux, leur tonalité, le genre et l’âge des artistes. Cet analyste de données qui ne fait pas dans la demi-mesure a aussi chronométré à la main la durée des introductions de chaque morceau. Les résultats sont très parlants.</p>
@@ -189,7 +199,7 @@
         <CardGraph 
             size="big"
             flourishId="14991590"
-            title="Evolution de la durée des intros du Billboard Hot 100 (60 secondes ou moins) "
+            title="Evolution de la durée des intros du Billboard Hot 100 (60 secondes ou moins)"
             textContent=""/>
 
     </section>
@@ -212,8 +222,14 @@
                 <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/charli_xcx.jpg" alt="charlie XCX">
                 <p class="text-sm font-light border-l-4 p-1 mt-1 border-primary rounded-sm">L'artiste Charli XCX à Londres, le 17 septembre 2023 - Dave Benett/Getty Images for MAC Cosmetics</p>
                 <p class="pb-4 pt-6">Ne nous faites pas dire ce que nous n’avons pas dit. Non, tous les genres musicaux n’ont pas changé à cause de Spotify. Et tous les artistes présents sur la plate-forme ne se soumettent pas sans discuter au diktat du chronomètre pour plaire au petit rond vert. Certains s’insurgent même. Tel le groupe britannique The Pocket Gods qui a sorti l’an dernier un album de 1000 chansons de 30 secondes intitulé «&nbsp;<i>Nobody makes money anymore&nbsp;</i>» («&nbsp;<i>plus personne ne gagne d’argent aujourd’hui&nbsp;</i>»). </p>
-            <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de la plateforme. «&nbsp;<i>Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll&nbsp;</i>» chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
-            <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). «&nbsp;<i>On n’est pas devenu riches avec ça&nbsp;</i>», s’amuse-t-il.</p>
+            <p class="pb-4 pt-6">Un album qui résonne comme un pied de nez à Spotify et à sa règle des 30 secondes. Une œuvre d’art unique aussi qui vaudra à ses créateurs déjantés un record au Guinness Book et une rencontre avec un des patrons de Spotify. «&nbsp;<i>Il faut 300 écoutes pour se payer une pinte. Les géants du streaming essayent de nous prendre notre âme, mais ils ne tueront jamais le Rock 'n' Roll&nbsp;</i>» chante en substance le groupe emmené par Mark Christopher Lee dans le premier morceau.
+            
+                <Quote 
+                content="Il faut d'abord être sur quelque chose qui nous plaît"
+                color="border-graphicPurple"/>
+           
+            
+                <p class="pb-4 pt-6">Quand on lui demande combien cet album lui a rapporté sur Spotify, Mark Christopher Lee part d’un grand rire. Il évoque le chiffre d’1,6 million de streams pour un revenu total de 300 livres (350 euros environ). «&nbsp;<i>On n’est pas devenu riches avec ça&nbsp;</i>», s’amuse-t-il.</p>
             <p class="pb-4 pt-6">L’artiste que nous avons contacté en profite pour glisser ceci&nbsp;: «&nbsp;<i>On est à blâmer aussi en tant que consommateur parce qu’on veut tout gratuitement. Ce n’est pas juste la grande méchante industrie.&nbsp;</i>» Autant de propos qu'il développe dans un récent documentaire long de trois heures <a href='https://www.youtube.com/watch?v=ZDKGANItoCI' target='_blank' rel=noreferrer>et disponible gratuitement sur YouTube</a>. 
             <p class="pb-4 pt-6 mb-12">Certains musiciens ont beau suivre un même mouvement, seul compte au final le plaisir sur scène et dans les oreilles. «&nbsp;<i>Il faut d'abord être sur quelque chose qui nous plaît, qui nous parle et où il y a vraiment une sensation, il y a un feeling qui se passe. Et puis le format, on voit après, c'est quelque chose qu'on voit ensuite&nbsp;</i>», assure le musicien bruxellois Doowy. «&nbsp;<i>S'il n'y a pas l'émotion dans le morceau, que ce soit un single ou pas un single, s'il n'y a rien qui se passe, vous pouvez faire le plus beau des formats, ça restera un bel emballage, mais vide&nbsp;</i>», conclut l’interprète du tout récent «&nbsp;<i>Premières fois&nbsp;</i>»… qui commence avec 12 secondes d’intro pour se terminer au bout de 2 minutes et 41 secondes. Pile dans les temps.</p>
         </div>
