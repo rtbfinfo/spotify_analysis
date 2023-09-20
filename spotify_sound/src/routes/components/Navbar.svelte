@@ -32,11 +32,11 @@
         <div class="share">
         <!-- svelte-ignore a11y-missing-content -->
         <div class="flex gap-1">
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rtbf.be/article/11243914" rel="noreferrer" target="_blank" alt="Facebook Logo">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.rtbf.be/article/11257810" rel="noreferrer" target="_blank" alt="Facebook Logo">
               <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/facebook_blanc_50_50.svg" alt="facebook Logo" />
           </a>
           <!-- svelte-ignore a11y-missing-content -->
-          <a href="https://twitter.com/intent/tweet?text=https://www.rtbf.be/article/11243914" rel="noreferrer" target="_blank" alt="Twitter Logo">
+          <a href="https://twitter.com/intent/tweet?text=https://www.rtbf.be/article/11257810" rel="noreferrer" target="_blank" alt="Twitter Logo">
               <img src="https://rtbfmedia.be/rtbfinfo/spotify_sound/pics/X_blanc_50_50.svg" alt="twitter(X) Logo" />
           </a>
 

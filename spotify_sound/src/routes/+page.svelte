@@ -31,7 +31,7 @@
 
 <Navbar/> 
 <Hero/>            
-<div class="h-screen bg-background rounded-2xl relative shadow-[ 0px_-20px_14px_-8px_rgba(5,247,130,0.78)]">
+<div class="h-screen bg-background rounded-t-2xl relative shadow-[ 0px_-20px_14px_-8px_rgba(5,247,130,0.78)]">
     <div class="max-w-3xl text-text px-4 pt-12 mx-auto text-lg">
         <p class="pt-6 first-letter:text-7xl first-letter:mr-3 first-letter:float-left">Il est petit, rond, vert barré de traits noirs et il a changé la musique pour toujours. Il y a 15 ans, le 7 octobre 2008, Spotify était lancé en version publique. Le but de cette plate-forme imaginée par les Suédois Daniel Ek et Martin Lorentzon&nbsp;: offrir de la musique à volonté moyennant des publicités ou un abonnement mensuel.</p>
         <p class="pt-6">La force de Spotify, c’est son algorithme qui vous connaît mieux que ne vous connaissait votre médiathécaire dans les années 90. Au point de vous proposer exactement ce que vous avez envie d’entendre au moment où votre humeur l’exige. Avec un revers à la médaille&nbsp;: le petit rond vert vous encercle dans des genres musicaux taillés pour vous plaire.</p>
